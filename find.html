@@ -1,0 +1,3573 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src='app.js'></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:wght@400;500;600;800" rel="stylesheet">
+  <title>Why Is My Rep</title>
+</head>
+<body>
+  <header>
+    <button id='topOfPage' onclick="window.location.href='index.html';">Why Is My Rep?</button>
+    <ul>
+      <!-- <li><button class='headerlinks' onclick="window.location.href='about.html';">About/Instructions</button></li> -->
+      <li><button class='headerlinks' onclick="window.location.href='find.html';">Find Your Representatives</button></li>
+      <li><button class='headerlinks' onclick="window.location.href='why.html';">Research Your Representatives</button></li>
+      <!-- <li><button class='headerlinks' onclick="window.location.href='data.html';">Data and Resources</button></li> -->
+    </ul>
+  </header>
+  <main id='find'>
+<!--Map comes from https://www.govtrack.us/congress/members/map and provides a link to look up specific reps through govtrack: -->
+    <iframe scrolling="no" src="https://www.govtrack.us/congress/members/embed/mapframe?&bounds=-147.198,57.317,-47.002,9.171"></iframe>
+  <div id='cList'><table id="sheet0" class="sheet0 gridlines" border="1" cellspacing="1" cellpadding="1"><colgroup><col class="col0" /><col class="col1" /><col class="col2" /><col class="col3" /><col class="col4" /><col class="col5" /></colgroup>
+    <tbody>
+    <tr class="row0">
+    <td class="column0 style0 s">State</td>
+    <td class="column1 style0 s">St/Dis</td>
+    <td class="column2 style0 s">FirstName</td>
+    <td class="column3 style0 s">LastName</td>
+    <td class="column4 style0 s">Party</td>
+    <td class="column5 style0 s">BioguideID</td>
+    </tr>
+    <tr class="row1">
+    <td class="column0 style0 s">Alaska</td>
+    <td class="column1 style0 s">AK00</td>
+    <td class="column2 style0 s">Don</td>
+    <td class="column3 style0 s">Young</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">Y000033</td>
+    </tr>
+    <tr class="row2">
+    <td class="column0 style0 s">Alabama</td>
+    <td class="column1 style0 s">AL01</td>
+    <td class="column2 style0 s">Bradley</td>
+    <td class="column3 style0 s">Byrne</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001289</td>
+    </tr>
+    <tr class="row3">
+    <td class="column0 style0 s">Alabama</td>
+    <td class="column1 style0 s">AL02</td>
+    <td class="column2 style0 s">Martha</td>
+    <td class="column3 style0 s">Roby</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000591</td>
+    </tr>
+    <tr class="row4">
+    <td class="column0 style0 s">Alabama</td>
+    <td class="column1 style0 s">AL03</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Rogers</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000575</td>
+    </tr>
+    <tr class="row5">
+    <td class="column0 style0 s">Alabama</td>
+    <td class="column1 style0 s">AL04</td>
+    <td class="column2 style0 s">Robert</td>
+    <td class="column3 style0 s">Aderholt</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">A000055</td>
+    </tr>
+    <tr class="row6">
+    <td class="column0 style0 s">Alabama</td>
+    <td class="column1 style0 s">AL05</td>
+    <td class="column2 style0 s">Mo</td>
+    <td class="column3 style0 s">Brooks</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001274</td>
+    </tr>
+    <tr class="row7">
+    <td class="column0 style0 s">Alabama</td>
+    <td class="column1 style0 s">AL06</td>
+    <td class="column2 style0 s">Gary</td>
+    <td class="column3 style0 s">Palmer</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">P000609</td>
+    </tr>
+    <tr class="row8">
+    <td class="column0 style0 s">Alabama</td>
+    <td class="column1 style0 s">AL07</td>
+    <td class="column2 style0 s">Terri</td>
+    <td class="column3 style0 s">Sewell</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001185</td>
+    </tr>
+    <tr class="row9">
+    <td class="column0 style0 s">Arkansas</td>
+    <td class="column1 style0 s">AR01</td>
+    <td class="column2 style0 s">Eric</td>
+    <td class="column3 style0 s">Crawford</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001087</td>
+    </tr>
+    <tr class="row10">
+    <td class="column0 style0 s">Arkansas</td>
+    <td class="column1 style0 s">AR02</td>
+    <td class="column2 style0 s">J.</td>
+    <td class="column3 style0 s">Hill</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001072</td>
+    </tr>
+    <tr class="row11">
+    <td class="column0 style0 s">Arkansas</td>
+    <td class="column1 style0 s">AR03</td>
+    <td class="column2 style0 s">Steve</td>
+    <td class="column3 style0 s">Womack</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000809</td>
+    </tr>
+    <tr class="row12">
+    <td class="column0 style0 s">Arkansas</td>
+    <td class="column1 style0 s">AR04</td>
+    <td class="column2 style0 s">Bruce</td>
+    <td class="column3 style0 s">Westerman</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000821</td>
+    </tr>
+    <tr class="row13">
+    <td class="column0 style0 s">American Samoa</td>
+    <td class="column1 style0 s">AS00</td>
+    <td class="column2 style0 s">Aumua Amata</td>
+    <td class="column3 style0 s">Radewagen</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000600</td>
+    </tr>
+    <tr class="row14">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ01</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">O'Halleran</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">O000171</td>
+    </tr>
+    <tr class="row15">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ02</td>
+    <td class="column2 style0 s">Ann</td>
+    <td class="column3 style0 s">Kirkpatrick</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000368</td>
+    </tr>
+    <tr class="row16">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ03</td>
+    <td class="column2 style0 s">Ra&uacute;l</td>
+    <td class="column3 style0 s">Grijalva</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000551</td>
+    </tr>
+    <tr class="row17">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ04</td>
+    <td class="column2 style0 s">Paul</td>
+    <td class="column3 style0 s">Gosar</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000565</td>
+    </tr>
+    <tr class="row18">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ05</td>
+    <td class="column2 style0 s">Andy</td>
+    <td class="column3 style0 s">Biggs</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001302</td>
+    </tr>
+    <tr class="row19">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ06</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Schweikert</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001183</td>
+    </tr>
+    <tr class="row20">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ07</td>
+    <td class="column2 style0 s">Ruben</td>
+    <td class="column3 style0 s">Gallego</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000574</td>
+    </tr>
+    <tr class="row21">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ08</td>
+    <td class="column2 style0 s">Debbie</td>
+    <td class="column3 style0 s">Lesko</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000589</td>
+    </tr>
+    <tr class="row22">
+    <td class="column0 style0 s">Arizona</td>
+    <td class="column1 style0 s">AZ09</td>
+    <td class="column2 style0 s">Greg</td>
+    <td class="column3 style0 s">Stanton</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001211</td>
+    </tr>
+    <tr class="row23">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA01</td>
+    <td class="column2 style0 s">Doug</td>
+    <td class="column3 style0 s">LaMalfa</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000578</td>
+    </tr>
+    <tr class="row24">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA02</td>
+    <td class="column2 style0 s">Jared</td>
+    <td class="column3 style0 s">Huffman</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001068</td>
+    </tr>
+    <tr class="row25">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA03</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Garamendi</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000559</td>
+    </tr>
+    <tr class="row26">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA04</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">McClintock</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001177</td>
+    </tr>
+    <tr class="row27">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA05</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Thompson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000460</td>
+    </tr>
+    <tr class="row28">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA06</td>
+    <td class="column2 style0 s">Doris</td>
+    <td class="column3 style0 s">Matsui</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001163</td>
+    </tr>
+    <tr class="row29">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA07</td>
+    <td class="column2 style0 s">Ami</td>
+    <td class="column3 style0 s">Bera</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001287</td>
+    </tr>
+    <tr class="row30">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA08</td>
+    <td class="column2 style0 s">Paul</td>
+    <td class="column3 style0 s">Cook</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001094</td>
+    </tr>
+    <tr class="row31">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA09</td>
+    <td class="column2 style0 s">Jerry</td>
+    <td class="column3 style0 s">McNerney</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001166</td>
+    </tr>
+    <tr class="row32">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA10</td>
+    <td class="column2 style0 s">Josh</td>
+    <td class="column3 style0 s">Harder</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001090</td>
+    </tr>
+    <tr class="row33">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA11</td>
+    <td class="column2 style0 s">Mark</td>
+    <td class="column3 style0 s">DeSaulnier</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000623</td>
+    </tr>
+    <tr class="row34">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA12</td>
+    <td class="column2 style0 s">Nancy</td>
+    <td class="column3 style0 s">Pelosi</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000197</td>
+    </tr>
+    <tr class="row35">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA13</td>
+    <td class="column2 style0 s">Barbara</td>
+    <td class="column3 style0 s">Lee</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000551</td>
+    </tr>
+    <tr class="row36">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA14</td>
+    <td class="column2 style0 s">Jackie</td>
+    <td class="column3 style0 s">Speier</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001175</td>
+    </tr>
+    <tr class="row37">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA15</td>
+    <td class="column2 style0 s">Eric</td>
+    <td class="column3 style0 s">Swalwell</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001193</td>
+    </tr>
+    <tr class="row38">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA16</td>
+    <td class="column2 style0 s">Jim</td>
+    <td class="column3 style0 s">Costa</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001059</td>
+    </tr>
+    <tr class="row39">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA17</td>
+    <td class="column2 style0 s">Ro</td>
+    <td class="column3 style0 s">Khanna</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000389</td>
+    </tr>
+    <tr class="row40">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA18</td>
+    <td class="column2 style0 s">Anna</td>
+    <td class="column3 style0 s">Eshoo</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">E000215</td>
+    </tr>
+    <tr class="row41">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA19</td>
+    <td class="column2 style0 s">Zoe</td>
+    <td class="column3 style0 s">Lofgren</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000397</td>
+    </tr>
+    <tr class="row42">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA20</td>
+    <td class="column2 style0 s">Jimmy</td>
+    <td class="column3 style0 s">Panetta</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000613</td>
+    </tr>
+    <tr class="row43">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA21</td>
+    <td class="column2 style0 s">TJ</td>
+    <td class="column3 style0 s">Cox</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001124</td>
+    </tr>
+    <tr class="row44">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA22</td>
+    <td class="column2 style0 s">Devin</td>
+    <td class="column3 style0 s">Nunes</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">N000181</td>
+    </tr>
+    <tr class="row45">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA23</td>
+    <td class="column2 style0 s">Kevin</td>
+    <td class="column3 style0 s">McCarthy</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001165</td>
+    </tr>
+    <tr class="row46">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA24</td>
+    <td class="column2 style0 s">Salud</td>
+    <td class="column3 style0 s">Carbajal</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001112</td>
+    </tr>
+    <tr class="row47">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA25</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Garcia</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000593</td>
+    </tr>
+    <tr class="row48">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA26</td>
+    <td class="column2 style0 s">Julia</td>
+    <td class="column3 style0 s">Brownley</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001285</td>
+    </tr>
+    <tr class="row49">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA27</td>
+    <td class="column2 style0 s">Judy</td>
+    <td class="column3 style0 s">Chu</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001080</td>
+    </tr>
+    <tr class="row50">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA28</td>
+    <td class="column2 style0 s">Adam</td>
+    <td class="column3 style0 s">Schiff</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001150</td>
+    </tr>
+    <tr class="row51">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA29</td>
+    <td class="column2 style0 s">Tony</td>
+    <td class="column3 style0 s">C&aacute;rdenas</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001097</td>
+    </tr>
+    <tr class="row52">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA30</td>
+    <td class="column2 style0 s">Brad</td>
+    <td class="column3 style0 s">Sherman</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S000344</td>
+    </tr>
+    <tr class="row53">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA31</td>
+    <td class="column2 style0 s">Pete</td>
+    <td class="column3 style0 s">Aguilar</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">A000371</td>
+    </tr>
+    <tr class="row54">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA32</td>
+    <td class="column2 style0 s">Grace</td>
+    <td class="column3 style0 s">Napolitano</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">N000179</td>
+    </tr>
+    <tr class="row55">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA33</td>
+    <td class="column2 style0 s">Ted</td>
+    <td class="column3 style0 s">Lieu</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000582</td>
+    </tr>
+    <tr class="row56">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA34</td>
+    <td class="column2 style0 s">Jimmy</td>
+    <td class="column3 style0 s">Gomez</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000585</td>
+    </tr>
+    <tr class="row57">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA35</td>
+    <td class="column2 style0 s">Norma</td>
+    <td class="column3 style0 s">Torres</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000474</td>
+    </tr>
+    <tr class="row58">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA36</td>
+    <td class="column2 style0 s">Raul</td>
+    <td class="column3 style0 s">Ruiz</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000599</td>
+    </tr>
+    <tr class="row59">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA37</td>
+    <td class="column2 style0 s">Karen</td>
+    <td class="column3 style0 s">Bass</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001270</td>
+    </tr>
+    <tr class="row60">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA38</td>
+    <td class="column2 style0 s">Linda</td>
+    <td class="column3 style0 s">S&aacute;nchez</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001156</td>
+    </tr>
+    <tr class="row61">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA39</td>
+    <td class="column2 style0 s">Gilbert</td>
+    <td class="column3 style0 s">Cisneros</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001123</td>
+    </tr>
+    <tr class="row62">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA40</td>
+    <td class="column2 style0 s">Lucille</td>
+    <td class="column3 style0 s">Roybal-Allard</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000486</td>
+    </tr>
+    <tr class="row63">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA41</td>
+    <td class="column2 style0 s">Mark</td>
+    <td class="column3 style0 s">Takano</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000472</td>
+    </tr>
+    <tr class="row64">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA42</td>
+    <td class="column2 style0 s">Ken</td>
+    <td class="column3 style0 s">Calvert</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C000059</td>
+    </tr>
+    <tr class="row65">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA43</td>
+    <td class="column2 style0 s">Maxine</td>
+    <td class="column3 style0 s">Waters</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">W000187</td>
+    </tr>
+    <tr class="row66">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA44</td>
+    <td class="column2 style0 s">Nanette</td>
+    <td class="column3 style0 s">Barrag&aacute;n</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001300</td>
+    </tr>
+    <tr class="row67">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA45</td>
+    <td class="column2 style0 s">Katie</td>
+    <td class="column3 style0 s">Porter</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000618</td>
+    </tr>
+    <tr class="row68">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA46</td>
+    <td class="column2 style0 s">J.</td>
+    <td class="column3 style0 s">Correa</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001110</td>
+    </tr>
+    <tr class="row69">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA47</td>
+    <td class="column2 style0 s">Alan</td>
+    <td class="column3 style0 s">Lowenthal</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000579</td>
+    </tr>
+    <tr class="row70">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA48</td>
+    <td class="column2 style0 s">Harley</td>
+    <td class="column3 style0 s">Rouda</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000616</td>
+    </tr>
+    <tr class="row71">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA49</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Levin</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000593</td>
+    </tr>
+    <tr class="row72">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA50</td>
+    <td class="column2 style0 s">"Vacant"</td>
+    <td class="column3">&nbsp;</td>
+    <td class="column4">&nbsp;</td>
+    <td class="column5">&nbsp;</td>
+    </tr>
+    <tr class="row73">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA51</td>
+    <td class="column2 style0 s">Juan</td>
+    <td class="column3 style0 s">Vargas</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">V000130</td>
+    </tr>
+    <tr class="row74">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA52</td>
+    <td class="column2 style0 s">Scott</td>
+    <td class="column3 style0 s">Peters</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000608</td>
+    </tr>
+    <tr class="row75">
+    <td class="column0 style0 s">California</td>
+    <td class="column1 style0 s">CA53</td>
+    <td class="column2 style0 s">Susan</td>
+    <td class="column3 style0 s">Davis</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000598</td>
+    </tr>
+    <tr class="row76">
+    <td class="column0 style0 s">Colorado</td>
+    <td class="column1 style0 s">CO01</td>
+    <td class="column2 style0 s">Diana</td>
+    <td class="column3 style0 s">DeGette</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000197</td>
+    </tr>
+    <tr class="row77">
+    <td class="column0 style0 s">Colorado</td>
+    <td class="column1 style0 s">CO02</td>
+    <td class="column2 style0 s">Joe</td>
+    <td class="column3 style0 s">Neguse</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">N000191</td>
+    </tr>
+    <tr class="row78">
+    <td class="column0 style0 s">Colorado</td>
+    <td class="column1 style0 s">CO03</td>
+    <td class="column2 style0 s">Scott</td>
+    <td class="column3 style0 s">Tipton</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">T000470</td>
+    </tr>
+    <tr class="row79">
+    <td class="column0 style0 s">Colorado</td>
+    <td class="column1 style0 s">CO04</td>
+    <td class="column2 style0 s">Ken</td>
+    <td class="column3 style0 s">Buck</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001297</td>
+    </tr>
+    <tr class="row80">
+    <td class="column0 style0 s">Colorado</td>
+    <td class="column1 style0 s">CO05</td>
+    <td class="column2 style0 s">Doug</td>
+    <td class="column3 style0 s">Lamborn</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000564</td>
+    </tr>
+    <tr class="row81">
+    <td class="column0 style0 s">Colorado</td>
+    <td class="column1 style0 s">CO06</td>
+    <td class="column2 style0 s">Jason</td>
+    <td class="column3 style0 s">Crow</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001121</td>
+    </tr>
+    <tr class="row82">
+    <td class="column0 style0 s">Colorado</td>
+    <td class="column1 style0 s">CO07</td>
+    <td class="column2 style0 s">Ed</td>
+    <td class="column3 style0 s">Perlmutter</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000593</td>
+    </tr>
+    <tr class="row83">
+    <td class="column0 style0 s">Connecticut</td>
+    <td class="column1 style0 s">CT01</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Larson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000557</td>
+    </tr>
+    <tr class="row84">
+    <td class="column0 style0 s">Connecticut</td>
+    <td class="column1 style0 s">CT02</td>
+    <td class="column2 style0 s">Joe</td>
+    <td class="column3 style0 s">Courtney</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001069</td>
+    </tr>
+    <tr class="row85">
+    <td class="column0 style0 s">Connecticut</td>
+    <td class="column1 style0 s">CT03</td>
+    <td class="column2 style0 s">Rosa</td>
+    <td class="column3 style0 s">DeLauro</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000216</td>
+    </tr>
+    <tr class="row86">
+    <td class="column0 style0 s">Connecticut</td>
+    <td class="column1 style0 s">CT04</td>
+    <td class="column2 style0 s">James</td>
+    <td class="column3 style0 s">Himes</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001047</td>
+    </tr>
+    <tr class="row87">
+    <td class="column0 style0 s">Connecticut</td>
+    <td class="column1 style0 s">CT05</td>
+    <td class="column2 style0 s">Jahana</td>
+    <td class="column3 style0 s">Hayes</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001081</td>
+    </tr>
+    <tr class="row88">
+    <td class="column0 style0 s">Washington, DC</td>
+    <td class="column1 style0 s">DC00</td>
+    <td class="column2 style0 s">Eleanor</td>
+    <td class="column3 style0 s">Norton</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">N000147</td>
+    </tr>
+    <tr class="row89">
+    <td class="column0 style0 s">Delaware</td>
+    <td class="column1 style0 s">DE00</td>
+    <td class="column2 style0 s">Lisa</td>
+    <td class="column3 style0 s">Blunt Rochester</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001303</td>
+    </tr>
+    <tr class="row90">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL01</td>
+    <td class="column2 style0 s">Matt</td>
+    <td class="column3 style0 s">Gaetz</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000578</td>
+    </tr>
+    <tr class="row91">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL02</td>
+    <td class="column2 style0 s">Neal</td>
+    <td class="column3 style0 s">Dunn</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">D000628</td>
+    </tr>
+    <tr class="row92">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL03</td>
+    <td class="column2 style0 s">Ted</td>
+    <td class="column3 style0 s">Yoho</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">Y000065</td>
+    </tr>
+    <tr class="row93">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL04</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Rutherford</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000609</td>
+    </tr>
+    <tr class="row94">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL05</td>
+    <td class="column2 style0 s">Al</td>
+    <td class="column3 style0 s">Lawson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000586</td>
+    </tr>
+    <tr class="row95">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL06</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">Waltz</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000823</td>
+    </tr>
+    <tr class="row96">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL07</td>
+    <td class="column2 style0 s">Stephanie</td>
+    <td class="column3 style0 s">Murphy</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001202</td>
+    </tr>
+    <tr class="row97">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL08</td>
+    <td class="column2 style0 s">Bill</td>
+    <td class="column3 style0 s">Posey</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">P000599</td>
+    </tr>
+    <tr class="row98">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL09</td>
+    <td class="column2 style0 s">Darren</td>
+    <td class="column3 style0 s">Soto</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001200</td>
+    </tr>
+    <tr class="row99">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL10</td>
+    <td class="column2 style0 s">Val</td>
+    <td class="column3 style0 s">Demings</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000627</td>
+    </tr>
+    <tr class="row100">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL11</td>
+    <td class="column2 style0 s">Daniel</td>
+    <td class="column3 style0 s">Webster</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000806</td>
+    </tr>
+    <tr class="row101">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL12</td>
+    <td class="column2 style0 s">Gus</td>
+    <td class="column3 style0 s">Bilirakis</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001257</td>
+    </tr>
+    <tr class="row102">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL13</td>
+    <td class="column2 style0 s">Charlie</td>
+    <td class="column3 style0 s">Crist</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001111</td>
+    </tr>
+    <tr class="row103">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL14</td>
+    <td class="column2 style0 s">Kathy</td>
+    <td class="column3 style0 s">Castor</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001066</td>
+    </tr>
+    <tr class="row104">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL15</td>
+    <td class="column2 style0 s">Ross</td>
+    <td class="column3 style0 s">Spano</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001210</td>
+    </tr>
+    <tr class="row105">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL16</td>
+    <td class="column2 style0 s">Vern</td>
+    <td class="column3 style0 s">Buchanan</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001260</td>
+    </tr>
+    <tr class="row106">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL17</td>
+    <td class="column2 style0 s">W.</td>
+    <td class="column3 style0 s">Steube</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001214</td>
+    </tr>
+    <tr class="row107">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL18</td>
+    <td class="column2 style0 s">Brian</td>
+    <td class="column3 style0 s">Mast</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001199</td>
+    </tr>
+    <tr class="row108">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL19</td>
+    <td class="column2 style0 s">Francis</td>
+    <td class="column3 style0 s">Rooney</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000607</td>
+    </tr>
+    <tr class="row109">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL20</td>
+    <td class="column2 style0 s">Alcee</td>
+    <td class="column3 style0 s">Hastings</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H000324</td>
+    </tr>
+    <tr class="row110">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL21</td>
+    <td class="column2 style0 s">Lois</td>
+    <td class="column3 style0 s">Frankel</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">F000462</td>
+    </tr>
+    <tr class="row111">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL22</td>
+    <td class="column2 style0 s">Theodore</td>
+    <td class="column3 style0 s">Deutch</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000610</td>
+    </tr>
+    <tr class="row112">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL23</td>
+    <td class="column2 style0 s">Debbie</td>
+    <td class="column3 style0 s">Wasserman Schultz</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">W000797</td>
+    </tr>
+    <tr class="row113">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL24</td>
+    <td class="column2 style0 s">Frederica</td>
+    <td class="column3 style0 s">Wilson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">W000808</td>
+    </tr>
+    <tr class="row114">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL25</td>
+    <td class="column2 style0 s">Mario</td>
+    <td class="column3 style0 s">Diaz-Balart</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">D000600</td>
+    </tr>
+    <tr class="row115">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL26</td>
+    <td class="column2 style0 s">Debbie</td>
+    <td class="column3 style0 s">Mucarsel-Powell</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001207</td>
+    </tr>
+    <tr class="row116">
+    <td class="column0 style0 s">Florida</td>
+    <td class="column1 style0 s">FL27</td>
+    <td class="column2 style0 s">Donna</td>
+    <td class="column3 style0 s">Shalala</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001206</td>
+    </tr>
+    <tr class="row117">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA01</td>
+    <td class="column2 style0 s">Earl</td>
+    <td class="column3 style0 s">Carter</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001103</td>
+    </tr>
+    <tr class="row118">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA02</td>
+    <td class="column2 style0 s">Sanford</td>
+    <td class="column3 style0 s">Bishop</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B000490</td>
+    </tr>
+    <tr class="row119">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA03</td>
+    <td class="column2 style0 s">A.</td>
+    <td class="column3 style0 s">Ferguson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">F000465</td>
+    </tr>
+    <tr class="row120">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA04</td>
+    <td class="column2 style0 s">Henry</td>
+    <td class="column3 style0 s">Johnson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">J000288</td>
+    </tr>
+    <tr class="row121">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA05</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Lewis</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000287</td>
+    </tr>
+    <tr class="row122">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA06</td>
+    <td class="column2 style0 s">Lucy</td>
+    <td class="column3 style0 s">McBath</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001208</td>
+    </tr>
+    <tr class="row123">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA07</td>
+    <td class="column2 style0 s">Rob</td>
+    <td class="column3 style0 s">Woodall</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000810</td>
+    </tr>
+    <tr class="row124">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA08</td>
+    <td class="column2 style0 s">Austin</td>
+    <td class="column3 style0 s">Scott</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001189</td>
+    </tr>
+    <tr class="row125">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA09</td>
+    <td class="column2 style0 s">Doug</td>
+    <td class="column3 style0 s">Collins</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001093</td>
+    </tr>
+    <tr class="row126">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA10</td>
+    <td class="column2 style0 s">Jody</td>
+    <td class="column3 style0 s">Hice</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001071</td>
+    </tr>
+    <tr class="row127">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA11</td>
+    <td class="column2 style0 s">Barry</td>
+    <td class="column3 style0 s">Loudermilk</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000583</td>
+    </tr>
+    <tr class="row128">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA12</td>
+    <td class="column2 style0 s">Rick</td>
+    <td class="column3 style0 s">Allen</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">A000372</td>
+    </tr>
+    <tr class="row129">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA13</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Scott</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001157</td>
+    </tr>
+    <tr class="row130">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GA14</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">Graves</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000560</td>
+    </tr>
+    <tr class="row131">
+    <td class="column0 style0 s">Georgia</td>
+    <td class="column1 style0 s">GU00</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">San Nicolas</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001204</td>
+    </tr>
+    <tr class="row132">
+    <td class="column0 style0 s">Hawaii</td>
+    <td class="column1 style0 s">HI01</td>
+    <td class="column2 style0 s">Ed</td>
+    <td class="column3 style0 s">Case</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001055</td>
+    </tr>
+    <tr class="row133">
+    <td class="column0 style0 s">Hawaii</td>
+    <td class="column1 style0 s">HI02</td>
+    <td class="column2 style0 s">Tulsi</td>
+    <td class="column3 style0 s">Gabbard</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000571</td>
+    </tr>
+    <tr class="row134">
+    <td class="column0 style0 s">Iowa</td>
+    <td class="column1 style0 s">IA01</td>
+    <td class="column2 style0 s">Abby</td>
+    <td class="column3 style0 s">Finkenauer</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">F000467</td>
+    </tr>
+    <tr class="row135">
+    <td class="column0 style0 s">Iowa</td>
+    <td class="column1 style0 s">IA02</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Loebsack</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000565</td>
+    </tr>
+    <tr class="row136">
+    <td class="column0 style0 s">Iowa</td>
+    <td class="column1 style0 s">IA03</td>
+    <td class="column2 style0 s">Cynthia</td>
+    <td class="column3 style0 s">Axne</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">A000378</td>
+    </tr>
+    <tr class="row137">
+    <td class="column0 style0 s">Iowa</td>
+    <td class="column1 style0 s">IA04</td>
+    <td class="column2 style0 s">Steve</td>
+    <td class="column3 style0 s">King</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000362</td>
+    </tr>
+    <tr class="row138">
+    <td class="column0 style0 s">Idaho</td>
+    <td class="column1 style0 s">ID01</td>
+    <td class="column2 style0 s">Russ</td>
+    <td class="column3 style0 s">Fulcher</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">F000469</td>
+    </tr>
+    <tr class="row139">
+    <td class="column0 style0 s">Idaho</td>
+    <td class="column1 style0 s">ID02</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">Simpson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001148</td>
+    </tr>
+    <tr class="row140">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL01</td>
+    <td class="column2 style0 s">Bobby</td>
+    <td class="column3 style0 s">Rush</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000515</td>
+    </tr>
+    <tr class="row141">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL02</td>
+    <td class="column2 style0 s">Robin</td>
+    <td class="column3 style0 s">Kelly</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000385</td>
+    </tr>
+    <tr class="row142">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL03</td>
+    <td class="column2 style0 s">Daniel</td>
+    <td class="column3 style0 s">Lipinski</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000563</td>
+    </tr>
+    <tr class="row143">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL04</td>
+    <td class="column2 style0 s">Jes&uacute;s</td>
+    <td class="column3 style0 s">Garc&iacute;a</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000586</td>
+    </tr>
+    <tr class="row144">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL05</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Quigley</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">Q000023</td>
+    </tr>
+    <tr class="row145">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL06</td>
+    <td class="column2 style0 s">Sean</td>
+    <td class="column3 style0 s">Casten</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001117</td>
+    </tr>
+    <tr class="row146">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL07</td>
+    <td class="column2 style0 s">Danny</td>
+    <td class="column3 style0 s">Davis</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000096</td>
+    </tr>
+    <tr class="row147">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL08</td>
+    <td class="column2 style0 s">Raja</td>
+    <td class="column3 style0 s">Krishnamoorthi</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000391</td>
+    </tr>
+    <tr class="row148">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL09</td>
+    <td class="column2 style0 s">Janice</td>
+    <td class="column3 style0 s">Schakowsky</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001145</td>
+    </tr>
+    <tr class="row149">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL10</td>
+    <td class="column2 style0 s">Bradley</td>
+    <td class="column3 style0 s">Schneider</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001190</td>
+    </tr>
+    <tr class="row150">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL11</td>
+    <td class="column2 style0 s">Bill</td>
+    <td class="column3 style0 s">Foster</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">F000454</td>
+    </tr>
+    <tr class="row151">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL12</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Bost</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001295</td>
+    </tr>
+    <tr class="row152">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL13</td>
+    <td class="column2 style0 s">Rodney</td>
+    <td class="column3 style0 s">Davis</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">D000619</td>
+    </tr>
+    <tr class="row153">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL14</td>
+    <td class="column2 style0 s">Lauren</td>
+    <td class="column3 style0 s">Underwood</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">U000040</td>
+    </tr>
+    <tr class="row154">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL15</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Shimkus</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S000364</td>
+    </tr>
+    <tr class="row155">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL16</td>
+    <td class="column2 style0 s">Adam</td>
+    <td class="column3 style0 s">Kinzinger</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000378</td>
+    </tr>
+    <tr class="row156">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL17</td>
+    <td class="column2 style0 s">Cheri</td>
+    <td class="column3 style0 s">Bustos</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001286</td>
+    </tr>
+    <tr class="row157">
+    <td class="column0 style0 s">Illinois</td>
+    <td class="column1 style0 s">IL18</td>
+    <td class="column2 style0 s">Darin</td>
+    <td class="column3 style0 s">LaHood</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000585</td>
+    </tr>
+    <tr class="row158">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN01</td>
+    <td class="column2 style0 s">Peter</td>
+    <td class="column3 style0 s">Visclosky</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">V000108</td>
+    </tr>
+    <tr class="row159">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN02</td>
+    <td class="column2 style0 s">Jackie</td>
+    <td class="column3 style0 s">Walorski</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000813</td>
+    </tr>
+    <tr class="row160">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN03</td>
+    <td class="column2 style0 s">Jim</td>
+    <td class="column3 style0 s">Banks</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001299</td>
+    </tr>
+    <tr class="row161">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN04</td>
+    <td class="column2 style0 s">James</td>
+    <td class="column3 style0 s">Baird</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001307</td>
+    </tr>
+    <tr class="row162">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN05</td>
+    <td class="column2 style0 s">Susan</td>
+    <td class="column3 style0 s">Brooks</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001284</td>
+    </tr>
+    <tr class="row163">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN06</td>
+    <td class="column2 style0 s">Greg</td>
+    <td class="column3 style0 s">Pence</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">P000615</td>
+    </tr>
+    <tr class="row164">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN07</td>
+    <td class="column2 style0 s">Andr&eacute;</td>
+    <td class="column3 style0 s">Carson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001072</td>
+    </tr>
+    <tr class="row165">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN08</td>
+    <td class="column2 style0 s">Larry</td>
+    <td class="column3 style0 s">Bucshon</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001275</td>
+    </tr>
+    <tr class="row166">
+    <td class="column0 style0 s">Indiana</td>
+    <td class="column1 style0 s">IN09</td>
+    <td class="column2 style0 s">Trey</td>
+    <td class="column3 style0 s">Hollingsworth</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001074</td>
+    </tr>
+    <tr class="row167">
+    <td class="column0 style0 s">Kansas</td>
+    <td class="column1 style0 s">KS01</td>
+    <td class="column2 style0 s">Roger</td>
+    <td class="column3 style0 s">Marshall</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001198</td>
+    </tr>
+    <tr class="row168">
+    <td class="column0 style0 s">Kansas</td>
+    <td class="column1 style0 s">KS02</td>
+    <td class="column2 style0 s">Steven</td>
+    <td class="column3 style0 s">Watkins</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000824</td>
+    </tr>
+    <tr class="row169">
+    <td class="column0 style0 s">Kansas</td>
+    <td class="column1 style0 s">KS03</td>
+    <td class="column2 style0 s">Sharice</td>
+    <td class="column3 style0 s">Davids</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000629</td>
+    </tr>
+    <tr class="row170">
+    <td class="column0 style0 s">Kansas</td>
+    <td class="column1 style0 s">KS04</td>
+    <td class="column2 style0 s">Ron</td>
+    <td class="column3 style0 s">Estes</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">E000298</td>
+    </tr>
+    <tr class="row171">
+    <td class="column0 style0 s">Kentucky</td>
+    <td class="column1 style0 s">KY01</td>
+    <td class="column2 style0 s">James</td>
+    <td class="column3 style0 s">Comer</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001108</td>
+    </tr>
+    <tr class="row172">
+    <td class="column0 style0 s">Kentucky</td>
+    <td class="column1 style0 s">KY02</td>
+    <td class="column2 style0 s">Brett</td>
+    <td class="column3 style0 s">Guthrie</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000558</td>
+    </tr>
+    <tr class="row173">
+    <td class="column0 style0 s">Kentucky</td>
+    <td class="column1 style0 s">KY03</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Yarmuth</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">Y000062</td>
+    </tr>
+    <tr class="row174">
+    <td class="column0 style0 s">Kentucky</td>
+    <td class="column1 style0 s">KY04</td>
+    <td class="column2 style0 s">Thomas</td>
+    <td class="column3 style0 s">Massie</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001184</td>
+    </tr>
+    <tr class="row175">
+    <td class="column0 style0 s">Kentucky</td>
+    <td class="column1 style0 s">KY05</td>
+    <td class="column2 style0 s">Harold</td>
+    <td class="column3 style0 s">Rogers</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000395</td>
+    </tr>
+    <tr class="row176">
+    <td class="column0 style0 s">Kentucky</td>
+    <td class="column1 style0 s">KY06</td>
+    <td class="column2 style0 s">Andy</td>
+    <td class="column3 style0 s">Barr</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001282</td>
+    </tr>
+    <tr class="row177">
+    <td class="column0 style0 s">Louisiana</td>
+    <td class="column1 style0 s">LA01</td>
+    <td class="column2 style0 s">Steve</td>
+    <td class="column3 style0 s">Scalise</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001176</td>
+    </tr>
+    <tr class="row178">
+    <td class="column0 style0 s">Louisiana</td>
+    <td class="column1 style0 s">LA02</td>
+    <td class="column2 style0 s">Cedric</td>
+    <td class="column3 style0 s">Richmond</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000588</td>
+    </tr>
+    <tr class="row179">
+    <td class="column0 style0 s">Louisiana</td>
+    <td class="column1 style0 s">LA03</td>
+    <td class="column2 style0 s">Clay</td>
+    <td class="column3 style0 s">Higgins</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001077</td>
+    </tr>
+    <tr class="row180">
+    <td class="column0 style0 s">Louisiana</td>
+    <td class="column1 style0 s">LA04</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Johnson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">J000299</td>
+    </tr>
+    <tr class="row181">
+    <td class="column0 style0 s">Louisiana</td>
+    <td class="column1 style0 s">LA05</td>
+    <td class="column2 style0 s">Ralph</td>
+    <td class="column3 style0 s">Abraham</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">A000374</td>
+    </tr>
+    <tr class="row182">
+    <td class="column0 style0 s">Louisiana</td>
+    <td class="column1 style0 s">LA06</td>
+    <td class="column2 style0 s">Garret</td>
+    <td class="column3 style0 s">Graves</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000577</td>
+    </tr>
+    <tr class="row183">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA01</td>
+    <td class="column2 style0 s">Richard</td>
+    <td class="column3 style0 s">Neal</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">N000015</td>
+    </tr>
+    <tr class="row184">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA02</td>
+    <td class="column2 style0 s">James</td>
+    <td class="column3 style0 s">McGovern</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M000312</td>
+    </tr>
+    <tr class="row185">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA03</td>
+    <td class="column2 style0 s">Lori</td>
+    <td class="column3 style0 s">Trahan</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000482</td>
+    </tr>
+    <tr class="row186">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA04</td>
+    <td class="column2 style0 s">Joseph</td>
+    <td class="column3 style0 s">Kennedy</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000379</td>
+    </tr>
+    <tr class="row187">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA05</td>
+    <td class="column2 style0 s">Katherine</td>
+    <td class="column3 style0 s">Clark</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001101</td>
+    </tr>
+    <tr class="row188">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA06</td>
+    <td class="column2 style0 s">Seth</td>
+    <td class="column3 style0 s">Moulton</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001196</td>
+    </tr>
+    <tr class="row189">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA07</td>
+    <td class="column2 style0 s">Ayanna</td>
+    <td class="column3 style0 s">Pressley</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000617</td>
+    </tr>
+    <tr class="row190">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA08</td>
+    <td class="column2 style0 s">Stephen</td>
+    <td class="column3 style0 s">Lynch</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000562</td>
+    </tr>
+    <tr class="row191">
+    <td class="column0 style0 s">Massachusetts</td>
+    <td class="column1 style0 s">MA09</td>
+    <td class="column2 style0 s">William</td>
+    <td class="column3 style0 s">Keating</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000375</td>
+    </tr>
+    <tr class="row192">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD01</td>
+    <td class="column2 style0 s">Andy</td>
+    <td class="column3 style0 s">Harris</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001052</td>
+    </tr>
+    <tr class="row193">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD02</td>
+    <td class="column2 style0 s">C.</td>
+    <td class="column3 style0 s">Ruppersberger</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000576</td>
+    </tr>
+    <tr class="row194">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD03</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Sarbanes</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001168</td>
+    </tr>
+    <tr class="row195">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD04</td>
+    <td class="column2 style0 s">Anthony</td>
+    <td class="column3 style0 s">Brown</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001304</td>
+    </tr>
+    <tr class="row196">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD05</td>
+    <td class="column2 style0 s">Steny</td>
+    <td class="column3 style0 s">Hoyer</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H000874</td>
+    </tr>
+    <tr class="row197">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD06</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Trone</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000483</td>
+    </tr>
+    <tr class="row198">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD07</td>
+    <td class="column2 style0 s">Kweisi</td>
+    <td class="column3 style0 s">Mfume</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M000687</td>
+    </tr>
+    <tr class="row199">
+    <td class="column0 style0 s">Maryland</td>
+    <td class="column1 style0 s">MD08</td>
+    <td class="column2 style0 s">Jamie</td>
+    <td class="column3 style0 s">Raskin</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000606</td>
+    </tr>
+    <tr class="row200">
+    <td class="column0 style0 s">Maine</td>
+    <td class="column1 style0 s">ME01</td>
+    <td class="column2 style0 s">Chellie</td>
+    <td class="column3 style0 s">Pingree</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000597</td>
+    </tr>
+    <tr class="row201">
+    <td class="column0 style0 s">Maine</td>
+    <td class="column1 style0 s">ME02</td>
+    <td class="column2 style0 s">Jared</td>
+    <td class="column3 style0 s">Golden</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000592</td>
+    </tr>
+    <tr class="row202">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI01</td>
+    <td class="column2 style0 s">Jack</td>
+    <td class="column3 style0 s">Bergman</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001301</td>
+    </tr>
+    <tr class="row203">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI02</td>
+    <td class="column2 style0 s">Bill</td>
+    <td class="column3 style0 s">Huizenga</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001058</td>
+    </tr>
+    <tr class="row204">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI03</td>
+    <td class="column2 style0 s">Justin</td>
+    <td class="column3 style0 s">Amash</td>
+    <td class="column4 style0 s">I</td>
+    <td class="column5 style0 s">A000367</td>
+    </tr>
+    <tr class="row205">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI04</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Moolenaar</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001194</td>
+    </tr>
+    <tr class="row206">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI05</td>
+    <td class="column2 style0 s">Daniel</td>
+    <td class="column3 style0 s">Kildee</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000380</td>
+    </tr>
+    <tr class="row207">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI06</td>
+    <td class="column2 style0 s">Fred</td>
+    <td class="column3 style0 s">Upton</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">U000031</td>
+    </tr>
+    <tr class="row208">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI07</td>
+    <td class="column2 style0 s">Tim</td>
+    <td class="column3 style0 s">Walberg</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000798</td>
+    </tr>
+    <tr class="row209">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI08</td>
+    <td class="column2 style0 s">Elissa</td>
+    <td class="column3 style0 s">Slotkin</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001208</td>
+    </tr>
+    <tr class="row210">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI09</td>
+    <td class="column2 style0 s">Andy</td>
+    <td class="column3 style0 s">Levin</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000592</td>
+    </tr>
+    <tr class="row211">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI10</td>
+    <td class="column2 style0 s">Paul</td>
+    <td class="column3 style0 s">Mitchell</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001201</td>
+    </tr>
+    <tr class="row212">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI11</td>
+    <td class="column2 style0 s">Haley</td>
+    <td class="column3 style0 s">Stevens</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001215</td>
+    </tr>
+    <tr class="row213">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI12</td>
+    <td class="column2 style0 s">Debbie</td>
+    <td class="column3 style0 s">Dingell</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000624</td>
+    </tr>
+    <tr class="row214">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI13</td>
+    <td class="column2 style0 s">Rashida</td>
+    <td class="column3 style0 s">Tlaib</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000481</td>
+    </tr>
+    <tr class="row215">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MI14</td>
+    <td class="column2 style0 s">Brenda</td>
+    <td class="column3 style0 s">Lawrence</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000581</td>
+    </tr>
+    <tr class="row216">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN01</td>
+    <td class="column2 style0 s">Jim</td>
+    <td class="column3 style0 s">Hagedorn</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001088</td>
+    </tr>
+    <tr class="row217">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN02</td>
+    <td class="column2 style0 s">Angie</td>
+    <td class="column3 style0 s">Craig</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001119</td>
+    </tr>
+    <tr class="row218">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN03</td>
+    <td class="column2 style0 s">Dean</td>
+    <td class="column3 style0 s">Phillips</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000616</td>
+    </tr>
+    <tr class="row219">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN04</td>
+    <td class="column2 style0 s">Betty</td>
+    <td class="column3 style0 s">McCollum</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001143</td>
+    </tr>
+    <tr class="row220">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN05</td>
+    <td class="column2 style0 s">Ilhan</td>
+    <td class="column3 style0 s">Omar</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">O000173</td>
+    </tr>
+    <tr class="row221">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN06</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">Emmer</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">E000294</td>
+    </tr>
+    <tr class="row222">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN07</td>
+    <td class="column2 style0 s">Collin</td>
+    <td class="column3 style0 s">Peterson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000258</td>
+    </tr>
+    <tr class="row223">
+    <td class="column0 style0 s">Michigan</td>
+    <td class="column1 style0 s">MN08</td>
+    <td class="column2 style0 s">Pete</td>
+    <td class="column3 style0 s">Stauber</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001212</td>
+    </tr>
+    <tr class="row224">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO01</td>
+    <td class="column2 style0 s">Wm.</td>
+    <td class="column3 style0 s">Clay</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001049</td>
+    </tr>
+    <tr class="row225">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO02</td>
+    <td class="column2 style0 s">Ann</td>
+    <td class="column3 style0 s">Wagner</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000812</td>
+    </tr>
+    <tr class="row226">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO03</td>
+    <td class="column2 style0 s">Blaine</td>
+    <td class="column3 style0 s">Luetkemeyer</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000569</td>
+    </tr>
+    <tr class="row227">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO04</td>
+    <td class="column2 style0 s">Vicky</td>
+    <td class="column3 style0 s">Hartzler</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001053</td>
+    </tr>
+    <tr class="row228">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO05</td>
+    <td class="column2 style0 s">Emanuel</td>
+    <td class="column3 style0 s">Cleaver</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001061</td>
+    </tr>
+    <tr class="row229">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO06</td>
+    <td class="column2 style0 s">Sam</td>
+    <td class="column3 style0 s">Graves</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000546</td>
+    </tr>
+    <tr class="row230">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO07</td>
+    <td class="column2 style0 s">Billy</td>
+    <td class="column3 style0 s">Long</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000576</td>
+    </tr>
+    <tr class="row231">
+    <td class="column0 style0 s">Missouri</td>
+    <td class="column1 style0 s">MO08</td>
+    <td class="column2 style0 s">Jason</td>
+    <td class="column3 style0 s">Smith</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001195</td>
+    </tr>
+    <tr class="row232">
+    <td class="column0 style0 s">Northern Marianas</td>
+    <td class="column1 style0 s">MP00</td>
+    <td class="column2 style0 s">Gregorio</td>
+    <td class="column3 style0 s">Sablan</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001177</td>
+    </tr>
+    <tr class="row233">
+    <td class="column0 style0 s">Mississippi</td>
+    <td class="column1 style0 s">MS01</td>
+    <td class="column2 style0 s">Trent</td>
+    <td class="column3 style0 s">Kelly</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000388</td>
+    </tr>
+    <tr class="row234">
+    <td class="column0 style0 s">Mississippi</td>
+    <td class="column1 style0 s">MS02</td>
+    <td class="column2 style0 s">Bennie</td>
+    <td class="column3 style0 s">Thompson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000193</td>
+    </tr>
+    <tr class="row235">
+    <td class="column0 style0 s">Mississippi</td>
+    <td class="column1 style0 s">MS03</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">Guest</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000591</td>
+    </tr>
+    <tr class="row236">
+    <td class="column0 style0 s">Mississippi</td>
+    <td class="column1 style0 s">MS04</td>
+    <td class="column2 style0 s">Steven</td>
+    <td class="column3 style0 s">Palazzo</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">P000601</td>
+    </tr>
+    <tr class="row237">
+    <td class="column0 style0 s">Montana</td>
+    <td class="column1 style0 s">MT00</td>
+    <td class="column2 style0 s">Greg</td>
+    <td class="column3 style0 s">Gianforte</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000584</td>
+    </tr>
+    <tr class="row238">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC01</td>
+    <td class="column2 style0 s">G.</td>
+    <td class="column3 style0 s">Butterfield</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001251</td>
+    </tr>
+    <tr class="row239">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC02</td>
+    <td class="column2 style0 s">George</td>
+    <td class="column3 style0 s">Holding</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001065</td>
+    </tr>
+    <tr class="row240">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC03</td>
+    <td class="column2 style0 s">Gregory</td>
+    <td class="column3 style0 s">Murphy</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001210</td>
+    </tr>
+    <tr class="row241">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC04</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Price</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000523</td>
+    </tr>
+    <tr class="row242">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC05</td>
+    <td class="column2 style0 s">Virginia</td>
+    <td class="column3 style0 s">Foxx</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">F000450</td>
+    </tr>
+    <tr class="row243">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC06</td>
+    <td class="column2 style0 s">Mark</td>
+    <td class="column3 style0 s">Walker</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000819</td>
+    </tr>
+    <tr class="row244">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC07</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Rouzer</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000603</td>
+    </tr>
+    <tr class="row245">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC08</td>
+    <td class="column2 style0 s">Richard</td>
+    <td class="column3 style0 s">Hudson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001067</td>
+    </tr>
+    <tr class="row246">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC09</td>
+    <td class="column2 style0 s">Dan</td>
+    <td class="column3 style0 s">Bishop</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001311</td>
+    </tr>
+    <tr class="row247">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC10</td>
+    <td class="column2 style0 s">Patrick</td>
+    <td class="column3 style0 s">McHenry</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001156</td>
+    </tr>
+    <tr class="row248">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC11</td>
+    <td class="column2">&nbsp;</td>
+    <td class="column3">&nbsp;</td>
+    <td class="column4">&nbsp;</td>
+    <td class="column5">&nbsp;</td>
+    </tr>
+    <tr class="row249">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC12</td>
+    <td class="column2 style0 s">Alma</td>
+    <td class="column3 style0 s">Adams</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">A000370</td>
+    </tr>
+    <tr class="row250">
+    <td class="column0 style0 s">North Carolina</td>
+    <td class="column1 style0 s">NC13</td>
+    <td class="column2 style0 s">Ted</td>
+    <td class="column3 style0 s">Budd</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001305</td>
+    </tr>
+    <tr class="row251">
+    <td class="column0 style0 s">North Dakota</td>
+    <td class="column1 style0 s">ND00</td>
+    <td class="column2 style0 s">Kelly</td>
+    <td class="column3 style0 s">Armstrong</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">A000377</td>
+    </tr>
+    <tr class="row252">
+    <td class="column0 style0 s">Nebraska</td>
+    <td class="column1 style0 s">NE01</td>
+    <td class="column2 style0 s">Jeff</td>
+    <td class="column3 style0 s">Fortenberry</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">F000449</td>
+    </tr>
+    <tr class="row253">
+    <td class="column0 style0 s">Nebraska</td>
+    <td class="column1 style0 s">NE02</td>
+    <td class="column2 style0 s">Don</td>
+    <td class="column3 style0 s">Bacon</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001298</td>
+    </tr>
+    <tr class="row254">
+    <td class="column0 style0 s">Nebraska</td>
+    <td class="column1 style0 s">NE03</td>
+    <td class="column2 style0 s">Adrian</td>
+    <td class="column3 style0 s">Smith</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001172</td>
+    </tr>
+    <tr class="row255">
+    <td class="column0 style0 s">New Hampshire</td>
+    <td class="column1 style0 s">NH01</td>
+    <td class="column2 style0 s">Chris</td>
+    <td class="column3 style0 s">Pappas</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000614</td>
+    </tr>
+    <tr class="row256">
+    <td class="column0 style0 s">New Hampshire</td>
+    <td class="column1 style0 s">NH02</td>
+    <td class="column2 style0 s">Ann</td>
+    <td class="column3 style0 s">Kuster</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000382</td>
+    </tr>
+    <tr class="row257">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ01</td>
+    <td class="column2 style0 s">Donald</td>
+    <td class="column3 style0 s">Norcross</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">N000188</td>
+    </tr>
+    <tr class="row258">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ02</td>
+    <td class="column2 style0 s">Jefferson</td>
+    <td class="column3 style0 s">Van Drew</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">V000133</td>
+    </tr>
+    <tr class="row259">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ03</td>
+    <td class="column2 style0 s">Andy</td>
+    <td class="column3 style0 s">Kim</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000394</td>
+    </tr>
+    <tr class="row260">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ04</td>
+    <td class="column2 style0 s">Christopher</td>
+    <td class="column3 style0 s">Smith</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S000522</td>
+    </tr>
+    <tr class="row261">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ05</td>
+    <td class="column2 style0 s">Josh</td>
+    <td class="column3 style0 s">Gottheimer</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000583</td>
+    </tr>
+    <tr class="row262">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ06</td>
+    <td class="column2 style0 s">Frank</td>
+    <td class="column3 style0 s">Pallone</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000034</td>
+    </tr>
+    <tr class="row263">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ07</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">Malinowski</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001203</td>
+    </tr>
+    <tr class="row264">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ08</td>
+    <td class="column2 style0 s">Albio</td>
+    <td class="column3 style0 s">Sires</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001165</td>
+    </tr>
+    <tr class="row265">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ09</td>
+    <td class="column2 style0 s">Bill</td>
+    <td class="column3 style0 s">Pascrell</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000096</td>
+    </tr>
+    <tr class="row266">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ10</td>
+    <td class="column2 style0 s">Donald</td>
+    <td class="column3 style0 s">Payne</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000604</td>
+    </tr>
+    <tr class="row267">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ11</td>
+    <td class="column2 style0 s">Mikie</td>
+    <td class="column3 style0 s">Sherrill</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001207</td>
+    </tr>
+    <tr class="row268">
+    <td class="column0 style0 s">New Jersey</td>
+    <td class="column1 style0 s">NJ12</td>
+    <td class="column2 style0 s">Bonnie</td>
+    <td class="column3 style0 s">Watson Coleman</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">W000822</td>
+    </tr>
+    <tr class="row269">
+    <td class="column0 style0 s">New Mexico</td>
+    <td class="column1 style0 s">NM01</td>
+    <td class="column2 style0 s">Debra</td>
+    <td class="column3 style0 s">Haaland</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001080</td>
+    </tr>
+    <tr class="row270">
+    <td class="column0 style0 s">New Mexico</td>
+    <td class="column1 style0 s">NM02</td>
+    <td class="column2 style0 s">Xochitl</td>
+    <td class="column3 style0 s">Torres Small</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000484</td>
+    </tr>
+    <tr class="row271">
+    <td class="column0 style0 s">New Mexico</td>
+    <td class="column1 style0 s">NM03</td>
+    <td class="column2 style0 s">Ben</td>
+    <td class="column3 style0 s">Luj&aacute;n</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000570</td>
+    </tr>
+    <tr class="row272">
+    <td class="column0 style0 s">Nevada</td>
+    <td class="column1 style0 s">NV01</td>
+    <td class="column2 style0 s">Dina</td>
+    <td class="column3 style0 s">Titus</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000468</td>
+    </tr>
+    <tr class="row273">
+    <td class="column0 style0 s">Nevada</td>
+    <td class="column1 style0 s">NV02</td>
+    <td class="column2 style0 s">Mark</td>
+    <td class="column3 style0 s">Amodei</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">A000369</td>
+    </tr>
+    <tr class="row274">
+    <td class="column0 style0 s">Nevada</td>
+    <td class="column1 style0 s">NV03</td>
+    <td class="column2 style0 s">Susie</td>
+    <td class="column3 style0 s">Lee</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000590</td>
+    </tr>
+    <tr class="row275">
+    <td class="column0 style0 s">Nevada</td>
+    <td class="column1 style0 s">NV04</td>
+    <td class="column2 style0 s">Steven</td>
+    <td class="column3 style0 s">Horsford</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001066</td>
+    </tr>
+    <tr class="row276">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY01</td>
+    <td class="column2 style0 s">Lee</td>
+    <td class="column3 style0 s">Zeldin</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">Z000017</td>
+    </tr>
+    <tr class="row277">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY02</td>
+    <td class="column2 style0 s">Peter</td>
+    <td class="column3 style0 s">King</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000210</td>
+    </tr>
+    <tr class="row278">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY03</td>
+    <td class="column2 style0 s">Thomas</td>
+    <td class="column3 style0 s">Suozzi</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001201</td>
+    </tr>
+    <tr class="row279">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY04</td>
+    <td class="column2 style0 s">Kathleen</td>
+    <td class="column3 style0 s">Rice</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000602</td>
+    </tr>
+    <tr class="row280">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY05</td>
+    <td class="column2 style0 s">Gregory</td>
+    <td class="column3 style0 s">Meeks</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001137</td>
+    </tr>
+    <tr class="row281">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY06</td>
+    <td class="column2 style0 s">Grace</td>
+    <td class="column3 style0 s">Meng</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001188</td>
+    </tr>
+    <tr class="row282">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY07</td>
+    <td class="column2 style0 s">Nydia</td>
+    <td class="column3 style0 s">Vel&aacute;zquez</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">V000081</td>
+    </tr>
+    <tr class="row283">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY08</td>
+    <td class="column2 style0 s">Hakeem</td>
+    <td class="column3 style0 s">Jeffries</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">J000294</td>
+    </tr>
+    <tr class="row284">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY09</td>
+    <td class="column2 style0 s">Yvette</td>
+    <td class="column3 style0 s">Clarke</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001067</td>
+    </tr>
+    <tr class="row285">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY10</td>
+    <td class="column2 style0 s">Jerrold</td>
+    <td class="column3 style0 s">Nadler</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">N000002</td>
+    </tr>
+    <tr class="row286">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY11</td>
+    <td class="column2 style0 s">Max</td>
+    <td class="column3 style0 s">Rose</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000613</td>
+    </tr>
+    <tr class="row287">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY12</td>
+    <td class="column2 style0 s">Carolyn</td>
+    <td class="column3 style0 s">Maloney</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M000087</td>
+    </tr>
+    <tr class="row288">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY13</td>
+    <td class="column2 style0 s">Adriano</td>
+    <td class="column3 style0 s">Espaillat</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">E000297</td>
+    </tr>
+    <tr class="row289">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY14</td>
+    <td class="column2 style0 s">Alexandria</td>
+    <td class="column3 style0 s">Ocasio-Cortez</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">O000172</td>
+    </tr>
+    <tr class="row290">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY15</td>
+    <td class="column2 style0 s">Jos&eacute;</td>
+    <td class="column3 style0 s">Serrano</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S000248</td>
+    </tr>
+    <tr class="row291">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY16</td>
+    <td class="column2 style0 s">Eliot</td>
+    <td class="column3 style0 s">Engel</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">E000179</td>
+    </tr>
+    <tr class="row292">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY17</td>
+    <td class="column2 style0 s">Nita</td>
+    <td class="column3 style0 s">Lowey</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000480</td>
+    </tr>
+    <tr class="row293">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY18</td>
+    <td class="column2 style0 s">Sean</td>
+    <td class="column3 style0 s">Maloney</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001185</td>
+    </tr>
+    <tr class="row294">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY19</td>
+    <td class="column2 style0 s">Antonio</td>
+    <td class="column3 style0 s">Delgado</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000630</td>
+    </tr>
+    <tr class="row295">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY20</td>
+    <td class="column2 style0 s">Paul</td>
+    <td class="column3 style0 s">Tonko</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">T000469</td>
+    </tr>
+    <tr class="row296">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY21</td>
+    <td class="column2 style0 s">Elise</td>
+    <td class="column3 style0 s">Stefanik</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001196</td>
+    </tr>
+    <tr class="row297">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY22</td>
+    <td class="column2 style0 s">Anthony</td>
+    <td class="column3 style0 s">Brindisi</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001308</td>
+    </tr>
+    <tr class="row298">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY23</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">Reed</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000585</td>
+    </tr>
+    <tr class="row299">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY24</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Katko</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000386</td>
+    </tr>
+    <tr class="row300">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY25</td>
+    <td class="column2 style0 s">Joseph</td>
+    <td class="column3 style0 s">Morelle</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001206</td>
+    </tr>
+    <tr class="row301">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY26</td>
+    <td class="column2 style0 s">Brian</td>
+    <td class="column3 style0 s">Higgins</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001038</td>
+    </tr>
+    <tr class="row302">
+    <td class="column0 style0 s">New York</td>
+    <td class="column1 style0 s">NY27</td>
+    <td class="column2">&nbsp;</td>
+    <td class="column3">&nbsp;</td>
+    <td class="column4">&nbsp;</td>
+    <td class="column5">&nbsp;</td>
+    </tr>
+    <tr class="row303">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH01</td>
+    <td class="column2 style0 s">Steve</td>
+    <td class="column3 style0 s">Chabot</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C000266</td>
+    </tr>
+    <tr class="row304">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH02</td>
+    <td class="column2 style0 s">Brad</td>
+    <td class="column3 style0 s">Wenstrup</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000815</td>
+    </tr>
+    <tr class="row305">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH03</td>
+    <td class="column2 style0 s">Joyce</td>
+    <td class="column3 style0 s">Beatty</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001281</td>
+    </tr>
+    <tr class="row306">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH04</td>
+    <td class="column2 style0 s">Jim</td>
+    <td class="column3 style0 s">Jordan</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">J000289</td>
+    </tr>
+    <tr class="row307">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH05</td>
+    <td class="column2 style0 s">Robert</td>
+    <td class="column3 style0 s">Latta</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000566</td>
+    </tr>
+    <tr class="row308">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH06</td>
+    <td class="column2 style0 s">Bill</td>
+    <td class="column3 style0 s">Johnson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">J000292</td>
+    </tr>
+    <tr class="row309">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH07</td>
+    <td class="column2 style0 s">Bob</td>
+    <td class="column3 style0 s">Gibbs</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000563</td>
+    </tr>
+    <tr class="row310">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH08</td>
+    <td class="column2 style0 s">Warren</td>
+    <td class="column3 style0 s">Davidson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">D000626</td>
+    </tr>
+    <tr class="row311">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH09</td>
+    <td class="column2 style0 s">Marcy</td>
+    <td class="column3 style0 s">Kaptur</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000009</td>
+    </tr>
+    <tr class="row312">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH10</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">Turner</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">T000463</td>
+    </tr>
+    <tr class="row313">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH11</td>
+    <td class="column2 style0 s">Marcia</td>
+    <td class="column3 style0 s">Fudge</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">F000455</td>
+    </tr>
+    <tr class="row314">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH12</td>
+    <td class="column2 style0 s">Troy</td>
+    <td class="column3 style0 s">Balderson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001306</td>
+    </tr>
+    <tr class="row315">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH13</td>
+    <td class="column2 style0 s">Tim</td>
+    <td class="column3 style0 s">Ryan</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">R000577</td>
+    </tr>
+    <tr class="row316">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH14</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Joyce</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">J000295</td>
+    </tr>
+    <tr class="row317">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH15</td>
+    <td class="column2 style0 s">Steve</td>
+    <td class="column3 style0 s">Stivers</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001187</td>
+    </tr>
+    <tr class="row318">
+    <td class="column0 style0 s">Ohio</td>
+    <td class="column1 style0 s">OH16</td>
+    <td class="column2 style0 s">Anthony</td>
+    <td class="column3 style0 s">Gonzalez</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000588</td>
+    </tr>
+    <tr class="row319">
+    <td class="column0 style0 s">Oklahoma</td>
+    <td class="column1 style0 s">OK01</td>
+    <td class="column2 style0 s">Kevin</td>
+    <td class="column3 style0 s">Hern</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001082</td>
+    </tr>
+    <tr class="row320">
+    <td class="column0 style0 s">Oklahoma</td>
+    <td class="column1 style0 s">OK02</td>
+    <td class="column2 style0 s">Markwayne</td>
+    <td class="column3 style0 s">Mullin</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001190</td>
+    </tr>
+    <tr class="row321">
+    <td class="column0 style0 s">Oklahoma</td>
+    <td class="column1 style0 s">OK03</td>
+    <td class="column2 style0 s">Frank</td>
+    <td class="column3 style0 s">Lucas</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">L000491</td>
+    </tr>
+    <tr class="row322">
+    <td class="column0 style0 s">Oklahoma</td>
+    <td class="column1 style0 s">OK04</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">Cole</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001053</td>
+    </tr>
+    <tr class="row323">
+    <td class="column0 style0 s">Oklahoma</td>
+    <td class="column1 style0 s">OK05</td>
+    <td class="column2 style0 s">Kendra</td>
+    <td class="column3 style0 s">Horn</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001083</td>
+    </tr>
+    <tr class="row324">
+    <td class="column0 style0 s">Oregon</td>
+    <td class="column1 style0 s">OR01</td>
+    <td class="column2 style0 s">Suzanne</td>
+    <td class="column3 style0 s">Bonamici</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001278</td>
+    </tr>
+    <tr class="row325">
+    <td class="column0 style0 s">Oregon</td>
+    <td class="column1 style0 s">OR02</td>
+    <td class="column2 style0 s">Greg</td>
+    <td class="column3 style0 s">Walden</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000791</td>
+    </tr>
+    <tr class="row326">
+    <td class="column0 style0 s">Oregon</td>
+    <td class="column1 style0 s">OR03</td>
+    <td class="column2 style0 s">Earl</td>
+    <td class="column3 style0 s">Blumenauer</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B000574</td>
+    </tr>
+    <tr class="row327">
+    <td class="column0 style0 s">Oregon</td>
+    <td class="column1 style0 s">OR04</td>
+    <td class="column2 style0 s">Peter</td>
+    <td class="column3 style0 s">DeFazio</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000191</td>
+    </tr>
+    <tr class="row328">
+    <td class="column0 style0 s">Oregon</td>
+    <td class="column1 style0 s">OR05</td>
+    <td class="column2 style0 s">Kurt</td>
+    <td class="column3 style0 s">Schrader</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001180</td>
+    </tr>
+    <tr class="row329">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA01</td>
+    <td class="column2 style0 s">Brian</td>
+    <td class="column3 style0 s">Fitzpatrick</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">F000466</td>
+    </tr>
+    <tr class="row330">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA02</td>
+    <td class="column2 style0 s">Brendan</td>
+    <td class="column3 style0 s">Boyle</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001296</td>
+    </tr>
+    <tr class="row331">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA03</td>
+    <td class="column2 style0 s">Dwight</td>
+    <td class="column3 style0 s">Evans</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">E000296</td>
+    </tr>
+    <tr class="row332">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA04</td>
+    <td class="column2 style0 s">Madeleine</td>
+    <td class="column3 style0 s">Dean</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000631</td>
+    </tr>
+    <tr class="row333">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA05</td>
+    <td class="column2 style0 s">Mary</td>
+    <td class="column3 style0 s">Scanlon</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001205</td>
+    </tr>
+    <tr class="row334">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA06</td>
+    <td class="column2 style0 s">Chrissy</td>
+    <td class="column3 style0 s">Houlahan</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001085</td>
+    </tr>
+    <tr class="row335">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA07</td>
+    <td class="column2 style0 s">Susan</td>
+    <td class="column3 style0 s">Wild</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">W000826</td>
+    </tr>
+    <tr class="row336">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA08</td>
+    <td class="column2 style0 s">Matt</td>
+    <td class="column3 style0 s">Cartwright</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001090</td>
+    </tr>
+    <tr class="row337">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA09</td>
+    <td class="column2 style0 s">Daniel</td>
+    <td class="column3 style0 s">Meuser</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001204</td>
+    </tr>
+    <tr class="row338">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA10</td>
+    <td class="column2 style0 s">Scott</td>
+    <td class="column3 style0 s">Perry</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">P000605</td>
+    </tr>
+    <tr class="row339">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA11</td>
+    <td class="column2 style0 s">Lloyd</td>
+    <td class="column3 style0 s">Smucker</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001199</td>
+    </tr>
+    <tr class="row340">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA12</td>
+    <td class="column2 style0 s">Fred</td>
+    <td class="column3 style0 s">Keller</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000395</td>
+    </tr>
+    <tr class="row341">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA13</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Joyce</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">J000302</td>
+    </tr>
+    <tr class="row342">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA14</td>
+    <td class="column2 style0 s">Guy</td>
+    <td class="column3 style0 s">Reschenthaler</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000610</td>
+    </tr>
+    <tr class="row343">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA15</td>
+    <td class="column2 style0 s">Glenn</td>
+    <td class="column3 style0 s">Thompson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">T000467</td>
+    </tr>
+    <tr class="row344">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA16</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Kelly</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000376</td>
+    </tr>
+    <tr class="row345">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA17</td>
+    <td class="column2 style0 s">Conor</td>
+    <td class="column3 style0 s">Lamb</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000588</td>
+    </tr>
+    <tr class="row346">
+    <td class="column0 style0 s">Pennsylvania</td>
+    <td class="column1 style0 s">PA18</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">Doyle</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000482</td>
+    </tr>
+    <tr class="row347">
+    <td class="column0 style0 s">Puerto Rico</td>
+    <td class="column1 style0 s">PR00</td>
+    <td class="column2 style0 s">Jenniffer</td>
+    <td class="column3 style0 s">Gonz&aacute;lez-Col&oacute;n</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000582</td>
+    </tr>
+    <tr class="row348">
+    <td class="column0 style0 s">Rhode Island</td>
+    <td class="column1 style0 s">RI01</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Cicilline</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001084</td>
+    </tr>
+    <tr class="row349">
+    <td class="column0 style0 s">Rhode Island</td>
+    <td class="column1 style0 s">RI02</td>
+    <td class="column2 style0 s">James</td>
+    <td class="column3 style0 s">Langevin</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000559</td>
+    </tr>
+    <tr class="row350">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SC01</td>
+    <td class="column2 style0 s">Joe</td>
+    <td class="column3 style0 s">Cunningham</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001122</td>
+    </tr>
+    <tr class="row351">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SC02</td>
+    <td class="column2 style0 s">Joe</td>
+    <td class="column3 style0 s">Wilson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000795</td>
+    </tr>
+    <tr class="row352">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SC03</td>
+    <td class="column2 style0 s">Jeff</td>
+    <td class="column3 style0 s">Duncan</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">D000615</td>
+    </tr>
+    <tr class="row353">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SC04</td>
+    <td class="column2 style0 s">William</td>
+    <td class="column3 style0 s">Timmons</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">T000480</td>
+    </tr>
+    <tr class="row354">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SC05</td>
+    <td class="column2 style0 s">Ralph</td>
+    <td class="column3 style0 s">Norman</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">N000190</td>
+    </tr>
+    <tr class="row355">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SC06</td>
+    <td class="column2 style0 s">James</td>
+    <td class="column3 style0 s">Clyburn</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C000537</td>
+    </tr>
+    <tr class="row356">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SC07</td>
+    <td class="column2 style0 s">Tom</td>
+    <td class="column3 style0 s">Rice</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000597</td>
+    </tr>
+    <tr class="row357">
+    <td class="column0 style0 s">South Carolina</td>
+    <td class="column1 style0 s">SD00</td>
+    <td class="column2 style0 s">Dusty</td>
+    <td class="column3 style0 s">Johnson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">J000301</td>
+    </tr>
+    <tr class="row358">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN01</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Roe</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000582</td>
+    </tr>
+    <tr class="row359">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN02</td>
+    <td class="column2 style0 s">Tim</td>
+    <td class="column3 style0 s">Burchett</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001309</td>
+    </tr>
+    <tr class="row360">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN03</td>
+    <td class="column2 style0 s">Charles</td>
+    <td class="column3 style0 s">Fleischmann</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">F000459</td>
+    </tr>
+    <tr class="row361">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN04</td>
+    <td class="column2 style0 s">Scott</td>
+    <td class="column3 style0 s">DesJarlais</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">D000616</td>
+    </tr>
+    <tr class="row362">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN05</td>
+    <td class="column2 style0 s">Jim</td>
+    <td class="column3 style0 s">Cooper</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C000754</td>
+    </tr>
+    <tr class="row363">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN06</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Rose</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000612</td>
+    </tr>
+    <tr class="row364">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN07</td>
+    <td class="column2 style0 s">Mark</td>
+    <td class="column3 style0 s">Green</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000590</td>
+    </tr>
+    <tr class="row365">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN08</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">Kustoff</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">K000392</td>
+    </tr>
+    <tr class="row366">
+    <td class="column0 style0 s">Tennessee</td>
+    <td class="column1 style0 s">TN09</td>
+    <td class="column2 style0 s">Steve</td>
+    <td class="column3 style0 s">Cohen</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001068</td>
+    </tr>
+    <tr class="row367">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX01</td>
+    <td class="column2 style0 s">Louie</td>
+    <td class="column3 style0 s">Gohmert</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000552</td>
+    </tr>
+    <tr class="row368">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX02</td>
+    <td class="column2 style0 s">Dan</td>
+    <td class="column3 style0 s">Crenshaw</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001120</td>
+    </tr>
+    <tr class="row369">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX03</td>
+    <td class="column2 style0 s">Van</td>
+    <td class="column3 style0 s">Taylor</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">T000479</td>
+    </tr>
+    <tr class="row370">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX04</td>
+    <td class="column2">&nbsp;</td>
+    <td class="column3">&nbsp;</td>
+    <td class="column4">&nbsp;</td>
+    <td class="column5">&nbsp;</td>
+    </tr>
+    <tr class="row371">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX05</td>
+    <td class="column2 style0 s">Lance</td>
+    <td class="column3 style0 s">Gooden</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000589</td>
+    </tr>
+    <tr class="row372">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX06</td>
+    <td class="column2 style0 s">Ron</td>
+    <td class="column3 style0 s">Wright</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000827</td>
+    </tr>
+    <tr class="row373">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX07</td>
+    <td class="column2 style0 s">Lizzie</td>
+    <td class="column3 style0 s">Fletcher</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">F000468</td>
+    </tr>
+    <tr class="row374">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX08</td>
+    <td class="column2 style0 s">Kevin</td>
+    <td class="column3 style0 s">Brady</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B000755</td>
+    </tr>
+    <tr class="row375">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX09</td>
+    <td class="column2 style0 s">Al</td>
+    <td class="column3 style0 s">Green</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000553</td>
+    </tr>
+    <tr class="row376">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX10</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">McCaul</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001157</td>
+    </tr>
+    <tr class="row377">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX11</td>
+    <td class="column2 style0 s">K.</td>
+    <td class="column3 style0 s">Conaway</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001062</td>
+    </tr>
+    <tr class="row378">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX12</td>
+    <td class="column2 style0 s">Kay</td>
+    <td class="column3 style0 s">Granger</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000377</td>
+    </tr>
+    <tr class="row379">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX13</td>
+    <td class="column2 style0 s">Mac</td>
+    <td class="column3 style0 s">Thornberry</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">T000238</td>
+    </tr>
+    <tr class="row380">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX14</td>
+    <td class="column2 style0 s">Randy</td>
+    <td class="column3 style0 s">Weber</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000814</td>
+    </tr>
+    <tr class="row381">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX15</td>
+    <td class="column2 style0 s">Vicente</td>
+    <td class="column3 style0 s">Gonzalez</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000581</td>
+    </tr>
+    <tr class="row382">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX16</td>
+    <td class="column2 style0 s">Veronica</td>
+    <td class="column3 style0 s">Escobar</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">E000299</td>
+    </tr>
+    <tr class="row383">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX17</td>
+    <td class="column2 style0 s">Bill</td>
+    <td class="column3 style0 s">Flores</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">F000461</td>
+    </tr>
+    <tr class="row384">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX18</td>
+    <td class="column2 style0 s">Sheila</td>
+    <td class="column3 style0 s">Jackson Lee</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">J000032</td>
+    </tr>
+    <tr class="row385">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX19</td>
+    <td class="column2 style0 s">Jodey</td>
+    <td class="column3 style0 s">Arrington</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">A000375</td>
+    </tr>
+    <tr class="row386">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX20</td>
+    <td class="column2 style0 s">Joaquin</td>
+    <td class="column3 style0 s">Castro</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001091</td>
+    </tr>
+    <tr class="row387">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX21</td>
+    <td class="column2 style0 s">Chip</td>
+    <td class="column3 style0 s">Roy</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000614</td>
+    </tr>
+    <tr class="row388">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX22</td>
+    <td class="column2 style0 s">Pete</td>
+    <td class="column3 style0 s">Olson</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">O000168</td>
+    </tr>
+    <tr class="row389">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX23</td>
+    <td class="column2 style0 s">Will</td>
+    <td class="column3 style0 s">Hurd</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001073</td>
+    </tr>
+    <tr class="row390">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX24</td>
+    <td class="column2 style0 s">Kenny</td>
+    <td class="column3 style0 s">Marchant</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001158</td>
+    </tr>
+    <tr class="row391">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX25</td>
+    <td class="column2 style0 s">Roger</td>
+    <td class="column3 style0 s">Williams</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000816</td>
+    </tr>
+    <tr class="row392">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX26</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">Burgess</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001248</td>
+    </tr>
+    <tr class="row393">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX27</td>
+    <td class="column2 style0 s">Michael</td>
+    <td class="column3 style0 s">Cloud</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001115</td>
+    </tr>
+    <tr class="row394">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX28</td>
+    <td class="column2 style0 s">Henry</td>
+    <td class="column3 style0 s">Cuellar</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001063</td>
+    </tr>
+    <tr class="row395">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX29</td>
+    <td class="column2 style0 s">Sylvia</td>
+    <td class="column3 style0 s">Garcia</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">G000587</td>
+    </tr>
+    <tr class="row396">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX30</td>
+    <td class="column2 style0 s">Eddie</td>
+    <td class="column3 style0 s">Johnson</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">J000126</td>
+    </tr>
+    <tr class="row397">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX31</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Carter</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001051</td>
+    </tr>
+    <tr class="row398">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX32</td>
+    <td class="column2 style0 s">Colin</td>
+    <td class="column3 style0 s">Allred</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">A000376</td>
+    </tr>
+    <tr class="row399">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX33</td>
+    <td class="column2 style0 s">Marc</td>
+    <td class="column3 style0 s">Veasey</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">V000131</td>
+    </tr>
+    <tr class="row400">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX34</td>
+    <td class="column2 style0 s">Filemon</td>
+    <td class="column3 style0 s">Vela</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">V000132</td>
+    </tr>
+    <tr class="row401">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX35</td>
+    <td class="column2 style0 s">Lloyd</td>
+    <td class="column3 style0 s">Doggett</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000399</td>
+    </tr>
+    <tr class="row402">
+    <td class="column0 style0 s">Texas</td>
+    <td class="column1 style0 s">TX36</td>
+    <td class="column2 style0 s">Brian</td>
+    <td class="column3 style0 s">Babin</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001291</td>
+    </tr>
+    <tr class="row403">
+    <td class="column0 style0 s">Utah</td>
+    <td class="column1 style0 s">UT01</td>
+    <td class="column2 style0 s">Rob</td>
+    <td class="column3 style0 s">Bishop</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">B001250</td>
+    </tr>
+    <tr class="row404">
+    <td class="column0 style0 s">Utah</td>
+    <td class="column1 style0 s">UT02</td>
+    <td class="column2 style0 s">Chris</td>
+    <td class="column3 style0 s">Stewart</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001192</td>
+    </tr>
+    <tr class="row405">
+    <td class="column0 style0 s">Utah</td>
+    <td class="column1 style0 s">UT03</td>
+    <td class="column2 style0 s">John</td>
+    <td class="column3 style0 s">Curtis</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001114</td>
+    </tr>
+    <tr class="row406">
+    <td class="column0 style0 s">Utah</td>
+    <td class="column1 style0 s">UT04</td>
+    <td class="column2 style0 s">Ben</td>
+    <td class="column3 style0 s">McAdams</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001209</td>
+    </tr>
+    <tr class="row407">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA01</td>
+    <td class="column2 style0 s">Robert</td>
+    <td class="column3 style0 s">Wittman</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">W000804</td>
+    </tr>
+    <tr class="row408">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA02</td>
+    <td class="column2 style0 s">Elaine</td>
+    <td class="column3 style0 s">Luria</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000591</td>
+    </tr>
+    <tr class="row409">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA03</td>
+    <td class="column2 style0 s">Robert</td>
+    <td class="column3 style0 s">Scott</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S000185</td>
+    </tr>
+    <tr class="row410">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA04</td>
+    <td class="column2 style0 s">A.</td>
+    <td class="column3 style0 s">McEachin</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001200</td>
+    </tr>
+    <tr class="row411">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA05</td>
+    <td class="column2 style0 s">Denver</td>
+    <td class="column3 style0 s">Riggleman</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">R000611</td>
+    </tr>
+    <tr class="row412">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA06</td>
+    <td class="column2 style0 s">Ben</td>
+    <td class="column3 style0 s">Cline</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001118</td>
+    </tr>
+    <tr class="row413">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA07</td>
+    <td class="column2 style0 s">Abigail</td>
+    <td class="column3 style0 s">Spanberger</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001209</td>
+    </tr>
+    <tr class="row414">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA08</td>
+    <td class="column2 style0 s">Donald</td>
+    <td class="column3 style0 s">Beyer</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">B001292</td>
+    </tr>
+    <tr class="row415">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA09</td>
+    <td class="column2 style0 s">H.</td>
+    <td class="column3 style0 s">Griffith</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000568</td>
+    </tr>
+    <tr class="row416">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA10</td>
+    <td class="column2 style0 s">Jennifer</td>
+    <td class="column3 style0 s">Wexton</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">W000825</td>
+    </tr>
+    <tr class="row417">
+    <td class="column0 style0 s">Virginia</td>
+    <td class="column1 style0 s">VA11</td>
+    <td class="column2 style0 s">Gerald</td>
+    <td class="column3 style0 s">Connolly</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">C001078</td>
+    </tr>
+    <tr class="row418">
+    <td class="column0 style0 s">Virgin Islands</td>
+    <td class="column1 style0 s">VI00</td>
+    <td class="column2 style0 s">Stacey</td>
+    <td class="column3 style0 s">Plaskett</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000610</td>
+    </tr>
+    <tr class="row419">
+    <td class="column0 style0 s">Vermont</td>
+    <td class="column1 style0 s">VT00</td>
+    <td class="column2 style0 s">Peter</td>
+    <td class="column3 style0 s">Welch</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">W000800</td>
+    </tr>
+    <tr class="row420">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA01</td>
+    <td class="column2 style0 s">Suzan</td>
+    <td class="column3 style0 s">DelBene</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">D000617</td>
+    </tr>
+    <tr class="row421">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA02</td>
+    <td class="column2 style0 s">Rick</td>
+    <td class="column3 style0 s">Larsen</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">L000560</td>
+    </tr>
+    <tr class="row422">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA03</td>
+    <td class="column2 style0 s">Jaime</td>
+    <td class="column3 style0 s">Herrera Beutler</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">H001056</td>
+    </tr>
+    <tr class="row423">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA04</td>
+    <td class="column2 style0 s">Dan</td>
+    <td class="column3 style0 s">Newhouse</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">N000189</td>
+    </tr>
+    <tr class="row424">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA05</td>
+    <td class="column2 style0 s">Cathy</td>
+    <td class="column3 style0 s">Rodgers</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001159</td>
+    </tr>
+    <tr class="row425">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA06</td>
+    <td class="column2 style0 s">Derek</td>
+    <td class="column3 style0 s">Kilmer</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000381</td>
+    </tr>
+    <tr class="row426">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA07</td>
+    <td class="column2 style0 s">Pramila</td>
+    <td class="column3 style0 s">Jayapal</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">J000298</td>
+    </tr>
+    <tr class="row427">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA08</td>
+    <td class="column2 style0 s">Kim</td>
+    <td class="column3 style0 s">Schrier</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S001216</td>
+    </tr>
+    <tr class="row428">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA09</td>
+    <td class="column2 style0 s">Adam</td>
+    <td class="column3 style0 s">Smith</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">S000510</td>
+    </tr>
+    <tr class="row429">
+    <td class="column0 style0 s">Washington</td>
+    <td class="column1 style0 s">WA10</td>
+    <td class="column2 style0 s">Denny</td>
+    <td class="column3 style0 s">Heck</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">H001064</td>
+    </tr>
+    <tr class="row430">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI01</td>
+    <td class="column2 style0 s">Bryan</td>
+    <td class="column3 style0 s">Steil</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S001213</td>
+    </tr>
+    <tr class="row431">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI02</td>
+    <td class="column2 style0 s">Mark</td>
+    <td class="column3 style0 s">Pocan</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">P000607</td>
+    </tr>
+    <tr class="row432">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI03</td>
+    <td class="column2 style0 s">Ron</td>
+    <td class="column3 style0 s">Kind</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">K000188</td>
+    </tr>
+    <tr class="row433">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI04</td>
+    <td class="column2 style0 s">Gwen</td>
+    <td class="column3 style0 s">Moore</td>
+    <td class="column4 style0 s">D</td>
+    <td class="column5 style0 s">M001160</td>
+    </tr>
+    <tr class="row434">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI05</td>
+    <td class="column2 style0 s">F.</td>
+    <td class="column3 style0 s">Sensenbrenner</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">S000244</td>
+    </tr>
+    <tr class="row435">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI06</td>
+    <td class="column2 style0 s">Glenn</td>
+    <td class="column3 style0 s">Grothman</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000576</td>
+    </tr>
+    <tr class="row436">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI07</td>
+    <td class="column2 style0 s">Thomas</td>
+    <td class="column3 style0 s">Tiffany</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">T000484</td>
+    </tr>
+    <tr class="row437">
+    <td class="column0 style0 s">Wisconsin</td>
+    <td class="column1 style0 s">WI08</td>
+    <td class="column2 style0 s">Mike</td>
+    <td class="column3 style0 s">Gallagher</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">G000579</td>
+    </tr>
+    <tr class="row438">
+    <td class="column0 style0 s">West Virginia</td>
+    <td class="column1 style0 s">WV01</td>
+    <td class="column2 style0 s">David</td>
+    <td class="column3 style0 s">McKinley</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001180</td>
+    </tr>
+    <tr class="row439">
+    <td class="column0 style0 s">West Virginia</td>
+    <td class="column1 style0 s">WV02</td>
+    <td class="column2 style0 s">Alexander</td>
+    <td class="column3 style0 s">Mooney</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001195</td>
+    </tr>
+    <tr class="row440">
+    <td class="column0 style0 s">West Virginia</td>
+    <td class="column1 style0 s">WV03</td>
+    <td class="column2 style0 s">Carol</td>
+    <td class="column3 style0 s">Miller</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">M001205</td>
+    </tr>
+    <tr class="row441">
+    <td class="column0 style0 s">Wyoming</td>
+    <td class="column1 style0 s">WY00</td>
+    <td class="column2 style0 s">Liz</td>
+    <td class="column3 style0 s">Cheney</td>
+    <td class="column4 style0 s">R</td>
+    <td class="column5 style0 s">C001109</td>
+    </tr>
+    </tbody>
+    </table></div>
+  </main>
+  <footer>
+    <P>Made by Jacqueline-Jane Sylvia Denney</P>
+    <p>June 14th, 2020</p>
+    <p>Powerd By:</p>
+    <img src='https://i.imgur.com/AubDhQd.png' id='logo' alt='Powered by ProPublica Logo'>
+  </footer>
+</body>
+</html>

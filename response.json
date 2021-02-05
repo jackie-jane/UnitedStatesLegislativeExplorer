@@ -1,0 +1,2198 @@
+[
+  {
+     "name":"Lamar Alexander",
+     "rId":"A000360"
+  },
+  {
+     "name":"Tammy Baldwin",
+     "rId":"B001230"
+  },
+  {
+     "name":"John Barrasso",
+     "rId":"B001261"
+  },
+  {
+     "name":"Michael Bennet",
+     "rId":"B001267"
+  },
+  {
+     "name":"Marsha Blackburn",
+     "rId":"B001243"
+  },
+  {
+     "name":"Richard Blumenthal",
+     "rId":"B001277"
+  },
+  {
+     "name":"Roy Blunt",
+     "rId":"B000575"
+  },
+  {
+     "name":"Cory Booker",
+     "rId":"B001288"
+  },
+  {
+     "name":"John Boozman",
+     "rId":"B001236"
+  },
+  {
+     "name":"Mike Braun",
+     "rId":"B001310"
+  },
+  {
+     "name":"Sherrod Brown",
+     "rId":"B000944"
+  },
+  {
+     "name":"Richard Burr",
+     "rId":"B001135"
+  },
+  {
+     "name":"Maria Cantwell",
+     "rId":"C000127"
+  },
+  {
+     "name":"Shelley Capito",
+     "rId":"C001047"
+  },
+  {
+     "name":"Benjamin Cardin",
+     "rId":"C000141"
+  },
+  {
+     "name":"Thomas Carper",
+     "rId":"C000174"
+  },
+  {
+     "name":"Bob Casey",
+     "rId":"C001070"
+  },
+  {
+     "name":"Bill Cassidy",
+     "rId":"C001075"
+  },
+  {
+     "name":"Susan Collins",
+     "rId":"C001035"
+  },
+  {
+     "name":"Christopher Coons",
+     "rId":"C001088"
+  },
+  {
+     "name":"John Cornyn",
+     "rId":"C001056"
+  },
+  {
+     "name":"Catherine Cortez Masto",
+     "rId":"C001113"
+  },
+  {
+     "name":"Tom Cotton",
+     "rId":"C001095"
+  },
+  {
+     "name":"Kevin Cramer",
+     "rId":"C001096"
+  },
+  {
+     "name":"Michael Crapo",
+     "rId":"C000880"
+  },
+  {
+     "name":"Ted Cruz",
+     "rId":"C001098"
+  },
+  {
+     "name":"Steve Daines",
+     "rId":"D000618"
+  },
+  {
+     "name":"Tammy Duckworth",
+     "rId":"D000622"
+  },
+  {
+     "name":"Richard Durbin",
+     "rId":"D000563"
+  },
+  {
+     "name":"Michael Enzi",
+     "rId":"E000285"
+  },
+  {
+     "name":"Joni Ernst",
+     "rId":"E000295"
+  },
+  {
+     "name":"Dianne Feinstein",
+     "rId":"F000062"
+  },
+  {
+     "name":"Deb Fischer",
+     "rId":"F000463"
+  },
+  {
+     "name":"Cory Gardner",
+     "rId":"G000562"
+  },
+  {
+     "name":"Kirsten Gillibrand",
+     "rId":"G000555"
+  },
+  {
+     "name":"Lindsey Graham",
+     "rId":"G000359"
+  },
+  {
+     "name":"Charles Grassley",
+     "rId":"G000386"
+  },
+  {
+     "name":"Kamala Harris",
+     "rId":"H001075"
+  },
+  {
+     "name":"Margaret Hassan",
+     "rId":"H001076"
+  },
+  {
+     "name":"Joshua Hawley",
+     "rId":"H001089"
+  },
+  {
+     "name":"Martin Heinrich",
+     "rId":"H001046"
+  },
+  {
+     "name":"Mazie Hirono",
+     "rId":"H001042"
+  },
+  {
+     "name":"John Hoeven",
+     "rId":"H001061"
+  },
+  {
+     "name":"Cindy Hyde-Smith",
+     "rId":"H001079"
+  },
+  {
+     "name":"James Inhofe",
+     "rId":"I000024"
+  },
+  {
+     "name":"Johnny Isakson",
+     "rId":"I000055"
+  },
+  {
+     "name":"Ron Johnson",
+     "rId":"J000293"
+  },
+  {
+     "name":"Doug Jones",
+     "rId":"J000300"
+  },
+  {
+     "name":"Tim Kaine",
+     "rId":"K000384"
+  },
+  {
+     "name":"John Kennedy",
+     "rId":"K000393"
+  },
+  {
+     "name":"Angus King",
+     "rId":"K000383"
+  },
+  {
+     "name":"Amy Klobuchar",
+     "rId":"K000367"
+  },
+  {
+     "name":"James Lankford",
+     "rId":"L000575"
+  },
+  {
+     "name":"Patrick Leahy",
+     "rId":"L000174"
+  },
+  {
+     "name":"Mike Lee",
+     "rId":"L000577"
+  },
+  {
+     "name":"Kelly Loeffler",
+     "rId":"L000594"
+  },
+  {
+     "name":"Joe Manchin",
+     "rId":"M001183"
+  },
+  {
+     "name":"Edward Markey",
+     "rId":"M000133"
+  },
+  {
+     "name":"Mitch McConnell",
+     "rId":"M000355"
+  },
+  {
+     "name":"Martha McSally",
+     "rId":"M001197"
+  },
+  {
+     "name":"Robert Menendez",
+     "rId":"M000639"
+  },
+  {
+     "name":"Jeff Merkley",
+     "rId":"M001176"
+  },
+  {
+     "name":"Jerry Moran",
+     "rId":"M000934"
+  },
+  {
+     "name":"Lisa Murkowski",
+     "rId":"M001153"
+  },
+  {
+     "name":"Christopher Murphy",
+     "rId":"M001169"
+  },
+  {
+     "name":"Patty Murray",
+     "rId":"M001111"
+  },
+  {
+     "name":"Rand Paul",
+     "rId":"P000603"
+  },
+  {
+     "name":"David Perdue",
+     "rId":"P000612"
+  },
+  {
+     "name":"Gary Peters",
+     "rId":"P000595"
+  },
+  {
+     "name":"Rob Portman",
+     "rId":"P000449"
+  },
+  {
+     "name":"Jack Reed",
+     "rId":"R000122"
+  },
+  {
+     "name":"Jim Risch",
+     "rId":"R000584"
+  },
+  {
+     "name":"Pat Roberts",
+     "rId":"R000307"
+  },
+  {
+     "name":"Mitt Romney",
+     "rId":"R000615"
+  },
+  {
+     "name":"Jacky Rosen",
+     "rId":"R000608"
+  },
+  {
+     "name":"Mike Rounds",
+     "rId":"R000605"
+  },
+  {
+     "name":"Marco Rubio",
+     "rId":"R000595"
+  },
+  {
+     "name":"Bernard Sanders",
+     "rId":"S000033"
+  },
+  {
+     "name":"Ben Sasse",
+     "rId":"S001197"
+  },
+  {
+     "name":"Brian Schatz",
+     "rId":"S001194"
+  },
+  {
+     "name":"Charles Schumer",
+     "rId":"S000148"
+  },
+  {
+     "name":"Rick Scott",
+     "rId":"S001217"
+  },
+  {
+     "name":"Tim Scott",
+     "rId":"S001184"
+  },
+  {
+     "name":"Jeanne Shaheen",
+     "rId":"S001181"
+  },
+  {
+     "name":"Richard Shelby",
+     "rId":"S000320"
+  },
+  {
+     "name":"Kyrsten Sinema",
+     "rId":"S001191"
+  },
+  {
+     "name":"Tina Smith",
+     "rId":"S001203"
+  },
+  {
+     "name":"Debbie Stabenow",
+     "rId":"S000770"
+  },
+  {
+     "name":"Dan Sullivan",
+     "rId":"S001198"
+  },
+  {
+     "name":"Jon Tester",
+     "rId":"T000464"
+  },
+  {
+     "name":"John Thune",
+     "rId":"T000250"
+  },
+  {
+     "name":"Thom Tillis",
+     "rId":"T000476"
+  },
+  {
+     "name":"Patrick Toomey",
+     "rId":"T000461"
+  },
+  {
+     "name":"Tom Udall",
+     "rId":"U000039"
+  },
+  {
+     "name":"Chris Van Hollen",
+     "rId":"V000128"
+  },
+  {
+     "name":"Mark Warner",
+     "rId":"W000805"
+  },
+  {
+     "name":"Elizabeth Warren",
+     "rId":"W000817"
+  },
+  {
+     "name":"Sheldon Whitehouse",
+     "rId":"W000802"
+  },
+  {
+     "name":"Roger Wicker",
+     "rId":"W000437"
+  },
+  {
+     "name":"Ron Wyden",
+     "rId":"W000779"
+  },
+  {
+     "name":"Todd Young",
+     "rId":"Y000064"
+  },
+  {
+     "name":"Ralph Abraham",
+     "rId":"A000374"
+  },
+  {
+     "name":"Alma Adams",
+     "rId":"A000370"
+  },
+  {
+     "name":"Robert Aderholt",
+     "rId":"A000055"
+  },
+  {
+     "name":"Pete Aguilar",
+     "rId":"A000371"
+  },
+  {
+     "name":"Rick Allen",
+     "rId":"A000372"
+  },
+  {
+     "name":"Colin Allred",
+     "rId":"A000376"
+  },
+  {
+     "name":"Justin Amash",
+     "rId":"A000367"
+  },
+  {
+     "name":"Justin Amash",
+     "rId":"A000367"
+  },
+  {
+     "name":"Mark Amodei",
+     "rId":"A000369"
+  },
+  {
+     "name":"Kelly Armstrong",
+     "rId":"A000377"
+  },
+  {
+     "name":"Jodey Arrington",
+     "rId":"A000375"
+  },
+  {
+     "name":"Cynthia Axne",
+     "rId":"A000378"
+  },
+  {
+     "name":"Brian Babin",
+     "rId":"B001291"
+  },
+  {
+     "name":"Don Bacon",
+     "rId":"B001298"
+  },
+  {
+     "name":"James Baird",
+     "rId":"B001307"
+  },
+  {
+     "name":"Troy Balderson",
+     "rId":"B001306"
+  },
+  {
+     "name":"Jim Banks",
+     "rId":"B001299"
+  },
+  {
+     "name":"Andy Barr",
+     "rId":"B001282"
+  },
+  {
+     "name":"Nanette Barragán",
+     "rId":"B001300"
+  },
+  {
+     "name":"Karen Bass",
+     "rId":"B001270"
+  },
+  {
+     "name":"Joyce Beatty",
+     "rId":"B001281"
+  },
+  {
+     "name":"Ami Bera",
+     "rId":"B001287"
+  },
+  {
+     "name":"Jack Bergman",
+     "rId":"B001301"
+  },
+  {
+     "name":"Donald Beyer",
+     "rId":"B001292"
+  },
+  {
+     "name":"Andy Biggs",
+     "rId":"B001302"
+  },
+  {
+     "name":"Gus Bilirakis",
+     "rId":"B001257"
+  },
+  {
+     "name":"Dan Bishop",
+     "rId":"B001311"
+  },
+  {
+     "name":"Rob Bishop",
+     "rId":"B001250"
+  },
+  {
+     "name":"Sanford Bishop",
+     "rId":"B000490"
+  },
+  {
+     "name":"Earl Blumenauer",
+     "rId":"B000574"
+  },
+  {
+     "name":"Lisa Blunt Rochester",
+     "rId":"B001303"
+  },
+  {
+     "name":"Suzanne Bonamici",
+     "rId":"B001278"
+  },
+  {
+     "name":"Mike Bost",
+     "rId":"B001295"
+  },
+  {
+     "name":"Brendan Boyle",
+     "rId":"B001296"
+  },
+  {
+     "name":"Kevin Brady",
+     "rId":"B000755"
+  },
+  {
+     "name":"Anthony Brindisi",
+     "rId":"B001308"
+  },
+  {
+     "name":"Mo Brooks",
+     "rId":"B001274"
+  },
+  {
+     "name":"Susan Brooks",
+     "rId":"B001284"
+  },
+  {
+     "name":"Anthony Brown",
+     "rId":"B001304"
+  },
+  {
+     "name":"Julia Brownley",
+     "rId":"B001285"
+  },
+  {
+     "name":"Vern Buchanan",
+     "rId":"B001260"
+  },
+  {
+     "name":"Ken Buck",
+     "rId":"B001297"
+  },
+  {
+     "name":"Larry Bucshon",
+     "rId":"B001275"
+  },
+  {
+     "name":"Ted Budd",
+     "rId":"B001305"
+  },
+  {
+     "name":"Tim Burchett",
+     "rId":"B001309"
+  },
+  {
+     "name":"Michael Burgess",
+     "rId":"B001248"
+  },
+  {
+     "name":"Cheri Bustos",
+     "rId":"B001286"
+  },
+  {
+     "name":"G. Butterfield",
+     "rId":"B001251"
+  },
+  {
+     "name":"Bradley Byrne",
+     "rId":"B001289"
+  },
+  {
+     "name":"Ken Calvert",
+     "rId":"C000059"
+  },
+  {
+     "name":"Salud Carbajal",
+     "rId":"C001112"
+  },
+  {
+     "name":"Tony Cárdenas",
+     "rId":"C001097"
+  },
+  {
+     "name":"André Carson",
+     "rId":"C001072"
+  },
+  {
+     "name":"John Carter",
+     "rId":"C001051"
+  },
+  {
+     "name":"Buddy Carter",
+     "rId":"C001103"
+  },
+  {
+     "name":"Matt Cartwright",
+     "rId":"C001090"
+  },
+  {
+     "name":"Ed Case",
+     "rId":"C001055"
+  },
+  {
+     "name":"Sean Casten",
+     "rId":"C001117"
+  },
+  {
+     "name":"Kathy Castor",
+     "rId":"C001066"
+  },
+  {
+     "name":"Joaquín Castro",
+     "rId":"C001091"
+  },
+  {
+     "name":"Steven Chabot",
+     "rId":"C000266"
+  },
+  {
+     "name":"Liz Cheney",
+     "rId":"C001109"
+  },
+  {
+     "name":"Judy Chu",
+     "rId":"C001080"
+  },
+  {
+     "name":"David Cicilline",
+     "rId":"C001084"
+  },
+  {
+     "name":"Gilbert Cisneros",
+     "rId":"C001123"
+  },
+  {
+     "name":"Katherine Clark",
+     "rId":"C001101"
+  },
+  {
+     "name":"Yvette Clarke",
+     "rId":"C001067"
+  },
+  {
+     "name":"William Clay",
+     "rId":"C001049"
+  },
+  {
+     "name":"Emanuel Cleaver",
+     "rId":"C001061"
+  },
+  {
+     "name":"Ben Cline",
+     "rId":"C001118"
+  },
+  {
+     "name":"Michael Cloud",
+     "rId":"C001115"
+  },
+  {
+     "name":"James Clyburn",
+     "rId":"C000537"
+  },
+  {
+     "name":"Steve Cohen",
+     "rId":"C001068"
+  },
+  {
+     "name":"Tom Cole",
+     "rId":"C001053"
+  },
+  {
+     "name":"Doug Collins",
+     "rId":"C001093"
+  },
+  {
+     "name":"Chris Collins",
+     "rId":"C001092"
+  },
+  {
+     "name":"James Comer",
+     "rId":"C001108"
+  },
+  {
+     "name":"K. Conaway",
+     "rId":"C001062"
+  },
+  {
+     "name":"Gerald Connolly",
+     "rId":"C001078"
+  },
+  {
+     "name":"Paul Cook",
+     "rId":"C001094"
+  },
+  {
+     "name":"Jim Cooper",
+     "rId":"C000754"
+  },
+  {
+     "name":"J. Correa",
+     "rId":"C001110"
+  },
+  {
+     "name":"Jim Costa",
+     "rId":"C001059"
+  },
+  {
+     "name":"Joe Courtney",
+     "rId":"C001069"
+  },
+  {
+     "name":"TJ Cox",
+     "rId":"C001124"
+  },
+  {
+     "name":"Angie Craig",
+     "rId":"C001119"
+  },
+  {
+     "name":"Rick Crawford",
+     "rId":"C001087"
+  },
+  {
+     "name":"Dan Crenshaw",
+     "rId":"C001120"
+  },
+  {
+     "name":"Charlie Crist",
+     "rId":"C001111"
+  },
+  {
+     "name":"Jason Crow",
+     "rId":"C001121"
+  },
+  {
+     "name":"Henry Cuellar",
+     "rId":"C001063"
+  },
+  {
+     "name":"Elijah Cummings",
+     "rId":"C000984"
+  },
+  {
+     "name":"Joe Cunningham",
+     "rId":"C001122"
+  },
+  {
+     "name":"John Curtis",
+     "rId":"C001114"
+  },
+  {
+     "name":"Sharice Davids",
+     "rId":"D000629"
+  },
+  {
+     "name":"Warren Davidson",
+     "rId":"D000626"
+  },
+  {
+     "name":"Danny Davis",
+     "rId":"D000096"
+  },
+  {
+     "name":"Rodney Davis",
+     "rId":"D000619"
+  },
+  {
+     "name":"Susan Davis",
+     "rId":"D000598"
+  },
+  {
+     "name":"Madeleine Dean",
+     "rId":"D000631"
+  },
+  {
+     "name":"Peter DeFazio",
+     "rId":"D000191"
+  },
+  {
+     "name":"Diana DeGette",
+     "rId":"D000197"
+  },
+  {
+     "name":"Rosa DeLauro",
+     "rId":"D000216"
+  },
+  {
+     "name":"Suzan DelBene",
+     "rId":"D000617"
+  },
+  {
+     "name":"Antonio Delgado",
+     "rId":"D000630"
+  },
+  {
+     "name":"Val Demings",
+     "rId":"D000627"
+  },
+  {
+     "name":"Mark DeSaulnier",
+     "rId":"D000623"
+  },
+  {
+     "name":"Scott DesJarlais",
+     "rId":"D000616"
+  },
+  {
+     "name":"Ted Deutch",
+     "rId":"D000610"
+  },
+  {
+     "name":"Mario Diaz-Balart",
+     "rId":"D000600"
+  },
+  {
+     "name":"Debbie Dingell",
+     "rId":"D000624"
+  },
+  {
+     "name":"Lloyd Doggett",
+     "rId":"D000399"
+  },
+  {
+     "name":"Mike Doyle",
+     "rId":"D000482"
+  },
+  {
+     "name":"Sean Duffy",
+     "rId":"D000614"
+  },
+  {
+     "name":"Jeffrey Duncan",
+     "rId":"D000615"
+  },
+  {
+     "name":"Neal Dunn",
+     "rId":"D000628"
+  },
+  {
+     "name":"Tom Emmer",
+     "rId":"E000294"
+  },
+  {
+     "name":"Eliot Engel",
+     "rId":"E000179"
+  },
+  {
+     "name":"Veronica Escobar",
+     "rId":"E000299"
+  },
+  {
+     "name":"Anna Eshoo",
+     "rId":"E000215"
+  },
+  {
+     "name":"Adriano Espaillat",
+     "rId":"E000297"
+  },
+  {
+     "name":"Ron Estes",
+     "rId":"E000298"
+  },
+  {
+     "name":"Dwight Evans",
+     "rId":"E000296"
+  },
+  {
+     "name":"A. Ferguson",
+     "rId":"F000465"
+  },
+  {
+     "name":"Abby Finkenauer",
+     "rId":"F000467"
+  },
+  {
+     "name":"Brian Fitzpatrick",
+     "rId":"F000466"
+  },
+  {
+     "name":"Chuck Fleischmann",
+     "rId":"F000459"
+  },
+  {
+     "name":"Lizzie Fletcher",
+     "rId":"F000468"
+  },
+  {
+     "name":"Bill Flores",
+     "rId":"F000461"
+  },
+  {
+     "name":"Jeff Fortenberry",
+     "rId":"F000449"
+  },
+  {
+     "name":"Bill Foster",
+     "rId":"F000454"
+  },
+  {
+     "name":"Virginia Foxx",
+     "rId":"F000450"
+  },
+  {
+     "name":"Lois Frankel",
+     "rId":"F000462"
+  },
+  {
+     "name":"Marcia Fudge",
+     "rId":"F000455"
+  },
+  {
+     "name":"Russ Fulcher",
+     "rId":"F000469"
+  },
+  {
+     "name":"Tulsi Gabbard",
+     "rId":"G000571"
+  },
+  {
+     "name":"Matt Gaetz",
+     "rId":"G000578"
+  },
+  {
+     "name":"Mike Gallagher",
+     "rId":"G000579"
+  },
+  {
+     "name":"Ruben Gallego",
+     "rId":"G000574"
+  },
+  {
+     "name":"John Garamendi",
+     "rId":"G000559"
+  },
+  {
+     "name":"Sylvia Garcia",
+     "rId":"G000587"
+  },
+  {
+     "name":"Jesús García",
+     "rId":"G000586"
+  },
+  {
+     "name":"Mike Garcia",
+     "rId":"G000061"
+  },
+  {
+     "name":"Greg Gianforte",
+     "rId":"G000584"
+  },
+  {
+     "name":"Bob Gibbs",
+     "rId":"G000563"
+  },
+  {
+     "name":"Louie Gohmert",
+     "rId":"G000552"
+  },
+  {
+     "name":"Jared Golden",
+     "rId":"G000592"
+  },
+  {
+     "name":"Jimmy Gomez",
+     "rId":"G000585"
+  },
+  {
+     "name":"Anthony Gonzalez",
+     "rId":"G000588"
+  },
+  {
+     "name":"Vicente Gonzalez",
+     "rId":"G000581"
+  },
+  {
+     "name":"Jenniffer González-Colón",
+     "rId":"G000582"
+  },
+  {
+     "name":"Lance Gooden",
+     "rId":"G000589"
+  },
+  {
+     "name":"Paul Gosar",
+     "rId":"G000565"
+  },
+  {
+     "name":"Josh Gottheimer",
+     "rId":"G000583"
+  },
+  {
+     "name":"Kay Granger",
+     "rId":"G000377"
+  },
+  {
+     "name":"Tom Graves",
+     "rId":"G000560"
+  },
+  {
+     "name":"Garret Graves",
+     "rId":"G000577"
+  },
+  {
+     "name":"Sam Graves",
+     "rId":"G000546"
+  },
+  {
+     "name":"Al Green",
+     "rId":"G000553"
+  },
+  {
+     "name":"Mark Green",
+     "rId":"G000590"
+  },
+  {
+     "name":"Morgan Griffith",
+     "rId":"G000568"
+  },
+  {
+     "name":"Raúl Grijalva",
+     "rId":"G000551"
+  },
+  {
+     "name":"Glenn Grothman",
+     "rId":"G000576"
+  },
+  {
+     "name":"Michael Guest",
+     "rId":"G000591"
+  },
+  {
+     "name":"Brett Guthrie",
+     "rId":"G000558"
+  },
+  {
+     "name":"Debra Haaland",
+     "rId":"H001080"
+  },
+  {
+     "name":"Jim Hagedorn",
+     "rId":"H001088"
+  },
+  {
+     "name":"Josh Harder",
+     "rId":"H001090"
+  },
+  {
+     "name":"Andy Harris",
+     "rId":"H001052"
+  },
+  {
+     "name":"Vicky Hartzler",
+     "rId":"H001053"
+  },
+  {
+     "name":"Alcee Hastings",
+     "rId":"H000324"
+  },
+  {
+     "name":"Jahana Hayes",
+     "rId":"H001081"
+  },
+  {
+     "name":"Denny Heck",
+     "rId":"H001064"
+  },
+  {
+     "name":"Kevin Hern",
+     "rId":"H001082"
+  },
+  {
+     "name":"Jaime Herrera Beutler",
+     "rId":"H001056"
+  },
+  {
+     "name":"Jody Hice",
+     "rId":"H001071"
+  },
+  {
+     "name":"Clay Higgins",
+     "rId":"H001077"
+  },
+  {
+     "name":"Brian Higgins",
+     "rId":"H001038"
+  },
+  {
+     "name":"Katie Hill",
+     "rId":"H001087"
+  },
+  {
+     "name":"French Hill",
+     "rId":"H001072"
+  },
+  {
+     "name":"Jim Himes",
+     "rId":"H001047"
+  },
+  {
+     "name":"George Holding",
+     "rId":"H001065"
+  },
+  {
+     "name":"Trey Hollingsworth",
+     "rId":"H001074"
+  },
+  {
+     "name":"Kendra Horn",
+     "rId":"H001083"
+  },
+  {
+     "name":"Steven Horsford",
+     "rId":"H001066"
+  },
+  {
+     "name":"Chrissy Houlahan",
+     "rId":"H001085"
+  },
+  {
+     "name":"Steny Hoyer",
+     "rId":"H000874"
+  },
+  {
+     "name":"Richard Hudson",
+     "rId":"H001067"
+  },
+  {
+     "name":"Jared Huffman",
+     "rId":"H001068"
+  },
+  {
+     "name":"Bill Huizenga",
+     "rId":"H001058"
+  },
+  {
+     "name":"Duncan Hunter",
+     "rId":"H001048"
+  },
+  {
+     "name":"Will Hurd",
+     "rId":"H001073"
+  },
+  {
+     "name":"Sheila Jackson Lee",
+     "rId":"J000032"
+  },
+  {
+     "name":"Pramila Jayapal",
+     "rId":"J000298"
+  },
+  {
+     "name":"Hakeem Jeffries",
+     "rId":"J000294"
+  },
+  {
+     "name":"Mike Johnson",
+     "rId":"J000299"
+  },
+  {
+     "name":"Dusty Johnson",
+     "rId":"J000301"
+  },
+  {
+     "name":"Eddie Johnson",
+     "rId":"J000126"
+  },
+  {
+     "name":"Bill Johnson",
+     "rId":"J000292"
+  },
+  {
+     "name":"Hank Johnson",
+     "rId":"J000288"
+  },
+  {
+     "name":"Walter Jones",
+     "rId":"J000255"
+  },
+  {
+     "name":"Jim Jordan",
+     "rId":"J000289"
+  },
+  {
+     "name":"Dave Joyce",
+     "rId":"J000295"
+  },
+  {
+     "name":"John Joyce",
+     "rId":"J000302"
+  },
+  {
+     "name":"Marcy Kaptur",
+     "rId":"K000009"
+  },
+  {
+     "name":"John Katko",
+     "rId":"K000386"
+  },
+  {
+     "name":"Bill Keating",
+     "rId":"K000375"
+  },
+  {
+     "name":"Fred Keller",
+     "rId":"K000395"
+  },
+  {
+     "name":"Robin Kelly",
+     "rId":"K000385"
+  },
+  {
+     "name":"Mike Kelly",
+     "rId":"K000376"
+  },
+  {
+     "name":"Trent Kelly",
+     "rId":"K000388"
+  },
+  {
+     "name":"Joseph Kennedy",
+     "rId":"K000379"
+  },
+  {
+     "name":"Ro Khanna",
+     "rId":"K000389"
+  },
+  {
+     "name":"Dan Kildee",
+     "rId":"K000380"
+  },
+  {
+     "name":"Derek Kilmer",
+     "rId":"K000381"
+  },
+  {
+     "name":"Andy Kim",
+     "rId":"K000394"
+  },
+  {
+     "name":"Ron Kind",
+     "rId":"K000188"
+  },
+  {
+     "name":"Peter King",
+     "rId":"K000210"
+  },
+  {
+     "name":"Steve King",
+     "rId":"K000362"
+  },
+  {
+     "name":"Adam Kinzinger",
+     "rId":"K000378"
+  },
+  {
+     "name":"Ann Kirkpatrick",
+     "rId":"K000368"
+  },
+  {
+     "name":"Raja Krishnamoorthi",
+     "rId":"K000391"
+  },
+  {
+     "name":"Ann Kuster",
+     "rId":"K000382"
+  },
+  {
+     "name":"David Kustoff",
+     "rId":"K000392"
+  },
+  {
+     "name":"Darin LaHood",
+     "rId":"L000585"
+  },
+  {
+     "name":"Doug LaMalfa",
+     "rId":"L000578"
+  },
+  {
+     "name":"Conor Lamb",
+     "rId":"L000588"
+  },
+  {
+     "name":"Doug Lamborn",
+     "rId":"L000564"
+  },
+  {
+     "name":"Jim Langevin",
+     "rId":"L000559"
+  },
+  {
+     "name":"Rick Larsen",
+     "rId":"L000560"
+  },
+  {
+     "name":"John Larson",
+     "rId":"L000557"
+  },
+  {
+     "name":"Robert Latta",
+     "rId":"L000566"
+  },
+  {
+     "name":"Brenda Lawrence",
+     "rId":"L000581"
+  },
+  {
+     "name":"Al Lawson",
+     "rId":"L000586"
+  },
+  {
+     "name":"Barbara Lee",
+     "rId":"L000551"
+  },
+  {
+     "name":"Susie Lee",
+     "rId":"L000590"
+  },
+  {
+     "name":"Debbie Lesko",
+     "rId":"L000589"
+  },
+  {
+     "name":"Mike Levin",
+     "rId":"L000593"
+  },
+  {
+     "name":"Andy Levin",
+     "rId":"L000592"
+  },
+  {
+     "name":"John Lewis",
+     "rId":"L000287"
+  },
+  {
+     "name":"Ted Lieu",
+     "rId":"L000582"
+  },
+  {
+     "name":"Daniel Lipinski",
+     "rId":"L000563"
+  },
+  {
+     "name":"Dave Loebsack",
+     "rId":"L000565"
+  },
+  {
+     "name":"Zoe Lofgren",
+     "rId":"L000397"
+  },
+  {
+     "name":"Billy Long",
+     "rId":"L000576"
+  },
+  {
+     "name":"Barry Loudermilk",
+     "rId":"L000583"
+  },
+  {
+     "name":"Alan Lowenthal",
+     "rId":"L000579"
+  },
+  {
+     "name":"Nita Lowey",
+     "rId":"L000480"
+  },
+  {
+     "name":"Frank Lucas",
+     "rId":"L000491"
+  },
+  {
+     "name":"Blaine Luetkemeyer",
+     "rId":"L000569"
+  },
+  {
+     "name":"Ben Luján",
+     "rId":"L000570"
+  },
+  {
+     "name":"Elaine Luria",
+     "rId":"L000591"
+  },
+  {
+     "name":"Stephen Lynch",
+     "rId":"L000562"
+  },
+  {
+     "name":"Tom Malinowski",
+     "rId":"M001203"
+  },
+  {
+     "name":"Sean Maloney",
+     "rId":"M001185"
+  },
+  {
+     "name":"Carolyn Maloney",
+     "rId":"M000087"
+  },
+  {
+     "name":"Kenny Marchant",
+     "rId":"M001158"
+  },
+  {
+     "name":"Tom Marino",
+     "rId":"M001179"
+  },
+  {
+     "name":"Roger Marshall",
+     "rId":"M001198"
+  },
+  {
+     "name":"Thomas Massie",
+     "rId":"M001184"
+  },
+  {
+     "name":"Brian Mast",
+     "rId":"M001199"
+  },
+  {
+     "name":"Doris Matsui",
+     "rId":"M001163"
+  },
+  {
+     "name":"Ben McAdams",
+     "rId":"M001209"
+  },
+  {
+     "name":"Lucy McBath",
+     "rId":"M001208"
+  },
+  {
+     "name":"Kevin McCarthy",
+     "rId":"M001165"
+  },
+  {
+     "name":"Michael McCaul",
+     "rId":"M001157"
+  },
+  {
+     "name":"Tom McClintock",
+     "rId":"M001177"
+  },
+  {
+     "name":"Betty McCollum",
+     "rId":"M001143"
+  },
+  {
+     "name":"A. McEachin",
+     "rId":"M001200"
+  },
+  {
+     "name":"Jim McGovern",
+     "rId":"M000312"
+  },
+  {
+     "name":"Patrick McHenry",
+     "rId":"M001156"
+  },
+  {
+     "name":"David McKinley",
+     "rId":"M001180"
+  },
+  {
+     "name":"Cathy McMorris Rodgers",
+     "rId":"M001159"
+  },
+  {
+     "name":"Jerry McNerney",
+     "rId":"M001166"
+  },
+  {
+     "name":"Mark Meadows",
+     "rId":"M001187"
+  },
+  {
+     "name":"Gregory Meeks",
+     "rId":"M001137"
+  },
+  {
+     "name":"Grace Meng",
+     "rId":"M001188"
+  },
+  {
+     "name":"Daniel Meuser",
+     "rId":"M001204"
+  },
+  {
+     "name":"Kweisi Mfume",
+     "rId":"M000687"
+  },
+  {
+     "name":"Carol Miller",
+     "rId":"M001205"
+  },
+  {
+     "name":"Paul Mitchell",
+     "rId":"M001201"
+  },
+  {
+     "name":"John Moolenaar",
+     "rId":"M001194"
+  },
+  {
+     "name":"Alex Mooney",
+     "rId":"M001195"
+  },
+  {
+     "name":"Gwen Moore",
+     "rId":"M001160"
+  },
+  {
+     "name":"Joe Morelle",
+     "rId":"M001206"
+  },
+  {
+     "name":"Seth Moulton",
+     "rId":"M001196"
+  },
+  {
+     "name":"Debbie Mucarsel-Powell",
+     "rId":"M001207"
+  },
+  {
+     "name":"Markwayne Mullin",
+     "rId":"M001190"
+  },
+  {
+     "name":"Greg Murphy",
+     "rId":"M001210"
+  },
+  {
+     "name":"Stephanie Murphy",
+     "rId":"M001202"
+  },
+  {
+     "name":"Jerrold Nadler",
+     "rId":"N000002"
+  },
+  {
+     "name":"Grace Napolitano",
+     "rId":"N000179"
+  },
+  {
+     "name":"Richard Neal",
+     "rId":"N000015"
+  },
+  {
+     "name":"Joe Neguse",
+     "rId":"N000191"
+  },
+  {
+     "name":"Dan Newhouse",
+     "rId":"N000189"
+  },
+  {
+     "name":"Donald Norcross",
+     "rId":"N000188"
+  },
+  {
+     "name":"Ralph Norman",
+     "rId":"N000190"
+  },
+  {
+     "name":"Eleanor Norton",
+     "rId":"N000147"
+  },
+  {
+     "name":"Devin Nunes",
+     "rId":"N000181"
+  },
+  {
+     "name":"Tom O'Halleran",
+     "rId":"O000171"
+  },
+  {
+     "name":"Alexandria Ocasio-Cortez",
+     "rId":"O000172"
+  },
+  {
+     "name":"Pete Olson",
+     "rId":"O000168"
+  },
+  {
+     "name":"Ilhan Omar",
+     "rId":"O000173"
+  },
+  {
+     "name":"Steven Palazzo",
+     "rId":"P000601"
+  },
+  {
+     "name":"Frank Pallone",
+     "rId":"P000034"
+  },
+  {
+     "name":"Gary Palmer",
+     "rId":"P000609"
+  },
+  {
+     "name":"Jimmy Panetta",
+     "rId":"P000613"
+  },
+  {
+     "name":"Chris Pappas",
+     "rId":"P000614"
+  },
+  {
+     "name":"Bill Pascrell",
+     "rId":"P000096"
+  },
+  {
+     "name":"Donald Payne",
+     "rId":"P000604"
+  },
+  {
+     "name":"Nancy Pelosi",
+     "rId":"P000197"
+  },
+  {
+     "name":"Greg Pence",
+     "rId":"P000615"
+  },
+  {
+     "name":"Ed Perlmutter",
+     "rId":"P000593"
+  },
+  {
+     "name":"Scott Perry",
+     "rId":"P000605"
+  },
+  {
+     "name":"Scott Peters",
+     "rId":"P000608"
+  },
+  {
+     "name":"Collin Peterson",
+     "rId":"P000258"
+  },
+  {
+     "name":"Dean Phillips",
+     "rId":"P000616"
+  },
+  {
+     "name":"Chellie Pingree",
+     "rId":"P000597"
+  },
+  {
+     "name":"Stacey Plaskett",
+     "rId":"P000610"
+  },
+  {
+     "name":"Mark Pocan",
+     "rId":"P000607"
+  },
+  {
+     "name":"Katie Porter",
+     "rId":"P000618"
+  },
+  {
+     "name":"Bill Posey",
+     "rId":"P000599"
+  },
+  {
+     "name":"Ayanna Pressley",
+     "rId":"P000617"
+  },
+  {
+     "name":"David Price",
+     "rId":"P000523"
+  },
+  {
+     "name":"Mike Quigley",
+     "rId":"Q000023"
+  },
+  {
+     "name":"Amata Radewagen",
+     "rId":"R000600"
+  },
+  {
+     "name":"Jamie Raskin",
+     "rId":"R000606"
+  },
+  {
+     "name":"John Ratcliffe",
+     "rId":"R000601"
+  },
+  {
+     "name":"Tom Reed",
+     "rId":"R000585"
+  },
+  {
+     "name":"Guy Reschenthaler",
+     "rId":"R000610"
+  },
+  {
+     "name":"Kathleen Rice",
+     "rId":"R000602"
+  },
+  {
+     "name":"Tom Rice",
+     "rId":"R000597"
+  },
+  {
+     "name":"Cedric Richmond",
+     "rId":"R000588"
+  },
+  {
+     "name":"Denver Riggleman",
+     "rId":"R000611"
+  },
+  {
+     "name":"Martha Roby",
+     "rId":"R000591"
+  },
+  {
+     "name":"Phil Roe",
+     "rId":"R000582"
+  },
+  {
+     "name":"Harold Rogers",
+     "rId":"R000395"
+  },
+  {
+     "name":"Mike Rogers",
+     "rId":"R000575"
+  },
+  {
+     "name":"Francis Rooney",
+     "rId":"R000607"
+  },
+  {
+     "name":"John Rose",
+     "rId":"R000612"
+  },
+  {
+     "name":"Max Rose",
+     "rId":"R000613"
+  },
+  {
+     "name":"Harley Rouda",
+     "rId":"R000616"
+  },
+  {
+     "name":"David Rouzer",
+     "rId":"R000603"
+  },
+  {
+     "name":"Chip Roy",
+     "rId":"R000614"
+  },
+  {
+     "name":"Lucille Roybal-Allard",
+     "rId":"R000486"
+  },
+  {
+     "name":"Raul Ruiz",
+     "rId":"R000599"
+  },
+  {
+     "name":"C.A. Dutch Ruppersberger",
+     "rId":"R000576"
+  },
+  {
+     "name":"Bobby Rush",
+     "rId":"R000515"
+  },
+  {
+     "name":"John Rutherford",
+     "rId":"R000609"
+  },
+  {
+     "name":"Tim Ryan",
+     "rId":"R000577"
+  },
+  {
+     "name":"Gregorio Sablan",
+     "rId":"S001177"
+  },
+  {
+     "name":"Michael San Nicolas",
+     "rId":"S001204"
+  },
+  {
+     "name":"Linda Sánchez",
+     "rId":"S001156"
+  },
+  {
+     "name":"John Sarbanes",
+     "rId":"S001168"
+  },
+  {
+     "name":"Steve Scalise",
+     "rId":"S001176"
+  },
+  {
+     "name":"Mary Scanlon",
+     "rId":"S001205"
+  },
+  {
+     "name":"Jan Schakowsky",
+     "rId":"S001145"
+  },
+  {
+     "name":"Adam Schiff",
+     "rId":"S001150"
+  },
+  {
+     "name":"Brad Schneider",
+     "rId":"S001190"
+  },
+  {
+     "name":"Kurt Schrader",
+     "rId":"S001180"
+  },
+  {
+     "name":"Kim Schrier",
+     "rId":"S001216"
+  },
+  {
+     "name":"David Schweikert",
+     "rId":"S001183"
+  },
+  {
+     "name":"David Scott",
+     "rId":"S001157"
+  },
+  {
+     "name":"Austin Scott",
+     "rId":"S001189"
+  },
+  {
+     "name":"Robert Scott",
+     "rId":"S000185"
+  },
+  {
+     "name":"F. Sensenbrenner",
+     "rId":"S000244"
+  },
+  {
+     "name":"José Serrano",
+     "rId":"S000248"
+  },
+  {
+     "name":"Terri Sewell",
+     "rId":"S001185"
+  },
+  {
+     "name":"Donna Shalala",
+     "rId":"S001206"
+  },
+  {
+     "name":"Brad Sherman",
+     "rId":"S000344"
+  },
+  {
+     "name":"Mikie Sherrill",
+     "rId":"S001207"
+  },
+  {
+     "name":"John Shimkus",
+     "rId":"S000364"
+  },
+  {
+     "name":"Mike Simpson",
+     "rId":"S001148"
+  },
+  {
+     "name":"Albio Sires",
+     "rId":"S001165"
+  },
+  {
+     "name":"Elissa Slotkin",
+     "rId":"S001208"
+  },
+  {
+     "name":"Adrian Smith",
+     "rId":"S001172"
+  },
+  {
+     "name":"Adam Smith",
+     "rId":"S000510"
+  },
+  {
+     "name":"Christopher Smith",
+     "rId":"S000522"
+  },
+  {
+     "name":"Jason Smith",
+     "rId":"S001195"
+  },
+  {
+     "name":"Lloyd Smucker",
+     "rId":"S001199"
+  },
+  {
+     "name":"Darren Soto",
+     "rId":"S001200"
+  },
+  {
+     "name":"Abigail Spanberger",
+     "rId":"S001209"
+  },
+  {
+     "name":"Ross Spano",
+     "rId":"S001210"
+  },
+  {
+     "name":"Jackie Speier",
+     "rId":"S001175"
+  },
+  {
+     "name":"Greg Stanton",
+     "rId":"S001211"
+  },
+  {
+     "name":"Pete Stauber",
+     "rId":"S001212"
+  },
+  {
+     "name":"Elise Stefanik",
+     "rId":"S001196"
+  },
+  {
+     "name":"Bryan Steil",
+     "rId":"S001213"
+  },
+  {
+     "name":"Greg Steube",
+     "rId":"S001214"
+  },
+  {
+     "name":"Haley Stevens",
+     "rId":"S001215"
+  },
+  {
+     "name":"Chris Stewart",
+     "rId":"S001192"
+  },
+  {
+     "name":"Steve Stivers",
+     "rId":"S001187"
+  },
+  {
+     "name":"Thomas Suozzi",
+     "rId":"S001201"
+  },
+  {
+     "name":"Eric Swalwell",
+     "rId":"S001193"
+  },
+  {
+     "name":"Mark Takano",
+     "rId":"T000472"
+  },
+  {
+     "name":"Van Taylor",
+     "rId":"T000479"
+  },
+  {
+     "name":"Glenn Thompson",
+     "rId":"T000467"
+  },
+  {
+     "name":"Mike Thompson",
+     "rId":"T000460"
+  },
+  {
+     "name":"Bennie Thompson",
+     "rId":"T000193"
+  },
+  {
+     "name":"William Thornberry",
+     "rId":"T000238"
+  },
+  {
+     "name":"Tom Tiffany",
+     "rId":"T000165"
+  },
+  {
+     "name":"William Timmons",
+     "rId":"T000480"
+  },
+  {
+     "name":"Scott Tipton",
+     "rId":"T000470"
+  },
+  {
+     "name":"Dina Titus",
+     "rId":"T000468"
+  },
+  {
+     "name":"Rashida Tlaib",
+     "rId":"T000481"
+  },
+  {
+     "name":"Paul Tonko",
+     "rId":"T000469"
+  },
+  {
+     "name":"Norma Torres",
+     "rId":"T000474"
+  },
+  {
+     "name":"Xochitl Torres Small",
+     "rId":"T000484"
+  },
+  {
+     "name":"Lori Trahan",
+     "rId":"T000482"
+  },
+  {
+     "name":"David Trone",
+     "rId":"T000483"
+  },
+  {
+     "name":"Michael Turner",
+     "rId":"T000463"
+  },
+  {
+     "name":"Lauren Underwood",
+     "rId":"U000040"
+  },
+  {
+     "name":"Fred Upton",
+     "rId":"U000031"
+  },
+  {
+     "name":"Jefferson Van Drew",
+     "rId":"V000133"
+  },
+  {
+     "name":"Jefferson Van Drew",
+     "rId":"V000133"
+  },
+  {
+     "name":"Juan Vargas",
+     "rId":"V000130"
+  },
+  {
+     "name":"Marc Veasey",
+     "rId":"V000131"
+  },
+  {
+     "name":"Filemon Vela",
+     "rId":"V000132"
+  },
+  {
+     "name":"Nydia Velázquez",
+     "rId":"V000081"
+  },
+  {
+     "name":"Peter Visclosky",
+     "rId":"V000108"
+  },
+  {
+     "name":"Ann Wagner",
+     "rId":"W000812"
+  },
+  {
+     "name":"Tim Walberg",
+     "rId":"W000798"
+  },
+  {
+     "name":"Greg Walden",
+     "rId":"W000791"
+  },
+  {
+     "name":"Mark Walker",
+     "rId":"W000819"
+  },
+  {
+     "name":"Jackie Walorski",
+     "rId":"W000813"
+  },
+  {
+     "name":"Michael Waltz",
+     "rId":"W000823"
+  },
+  {
+     "name":"Debbie Wasserman Schultz",
+     "rId":"W000797"
+  },
+  {
+     "name":"Maxine Waters",
+     "rId":"W000187"
+  },
+  {
+     "name":"Steven Watkins",
+     "rId":"W000824"
+  },
+  {
+     "name":"Bonnie Watson Coleman",
+     "rId":"W000822"
+  },
+  {
+     "name":"Randy Weber",
+     "rId":"W000814"
+  },
+  {
+     "name":"Daniel Webster",
+     "rId":"W000806"
+  },
+  {
+     "name":"Peter Welch",
+     "rId":"W000800"
+  },
+  {
+     "name":"Brad Wenstrup",
+     "rId":"W000815"
+  },
+  {
+     "name":"Bruce Westerman",
+     "rId":"W000821"
+  },
+  {
+     "name":"Jennifer Wexton",
+     "rId":"W000825"
+  },
+  {
+     "name":"Susan Wild",
+     "rId":"W000826"
+  },
+  {
+     "name":"Roger Williams",
+     "rId":"W000816"
+  },
+  {
+     "name":"Joe Wilson",
+     "rId":"W000795"
+  },
+  {
+     "name":"Frederica Wilson",
+     "rId":"W000808"
+  },
+  {
+     "name":"Robert Wittman",
+     "rId":"W000804"
+  },
+  {
+     "name":"Steve Womack",
+     "rId":"W000809"
+  },
+  {
+     "name":"Rob Woodall",
+     "rId":"W000810"
+  },
+  {
+     "name":"Ron Wright",
+     "rId":"W000827"
+  },
+  {
+     "name":"John Yarmuth",
+     "rId":"Y000062"
+  },
+  {
+     "name":"Ted Yoho",
+     "rId":"Y000065"
+  },
+  {
+     "name":"Don Young",
+     "rId":"Y000033"
+  },
+  {
+     "name":"Lee Zeldin",
+     "rId":"Z000017"
+  }
+]

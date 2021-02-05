@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+}
+header {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: #a3b5b8;
+    height: 20vh
+}
+ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+#topOfPage {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  font-size: 70px;
+  font-weight: 700;
+  padding: 15px 0 15px 0;
+}
+.headerlinks {
+  background: none;
+  font-size: 20px;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  border: none;
+  padding: 0 0 15px 0;
+  cursor: pointer;
+}
+main {
+  background-image: url('https://i.imgur.com/6RNaY1E.jpg');
+  background-size: cover;
+  height: 73vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  background-color: #a3b5b8;
+  font-family: 'Cinzel', serif;
+  font-weight: 400;
+  height: 7vh;
+}
+/* ProPublica Logo in Footer */
+#logo {
+  width: 140px;
+  height: auto;
+}
+/* Button on main page that directs to find.html */
+#findMyReps {
+  background-color: rgba( 245, 245, 245, .7);
+  font-size: 25px;
+  border: 5px solid white;
+  height: 200px;
+  width: 350px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+}
+/* Button on main page that directs to why.html */
+#whyMyReps{
+  background-color: rgba( 245, 245, 245, .8);
+  color: white;
+  font-size: 25px;
+  border: 5px solid white;
+  height: 200px;
+  width: 350px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: black;
+}
+#search {
+  background-color: rgba( 245, 245, 245, .9);
+  height: 30vh;
+  width: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border: 5px solid white;
+  font-size: 15px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 300;
+}
+#userInput {
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  height: 3vh;
+  width: 23vh;
+}
+#submit {
+  font-size: 12px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 100;
+  height: 3vh;
+  width: 7vh;
+  cursor: pointer;
+}
+#mResult {
+  background-color: rgba( 245, 245, 245, .9);
+  background-image: none;
+  width: cover;
+  height: 73vh;
+  display: flex;
+  flex-direction: row;
+  min-height: 0;
+  overflow-y: scroll;
+}
+#namePage {
+  background-color: #dce6e4;
+  align-self: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: 'EB Garamond', serif;
+  padding-left: 5px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40vh;
+  height: 73vh;
+  overflow-y: scroll;
+}
+#repContact {
+  padding: 10px;
+  font-size: 16px;
+}
+.collapse {
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  Padding: 10px;
+}
+.content {
+  max-height: 0;
+  background: transparent;
+  outline: none;
+  overflow: hidden;
+  transition: max-height .8s ease-out;
+  font-family: 'EB Garamond', serif;
+  text-align: left;
+}
+#repInfo {
+  background-color: #cfd1d1;
+  margin-left: 10px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 73vh;
+  overflow-y: scroll;
+}
+.vote, .bill, .statement {
+  border: 1px solid black;
+  width: 92%;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding:10px;
+}
+.summary {
+  border: 1px solid black;
+  width: 92%;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding:10px;
+  display: flex;
+  justify-content: center;
+}
+#headShot {
+  width: 70%;
+  height: auto;
+}
+Iframe {
+  height: 100%;
+  width: 50%;
+}
+#cList {
+  height: 100%;
+  width: 50%;
+  overflow-y: scroll;
+}
+#sheet0 {
+  background: whitesmoke;
+  width: 100%;
+  height: 100%;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#nav{
+  width: 25vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+}
+h2 {
+  font-family: 'Cinzel', serif;
+}

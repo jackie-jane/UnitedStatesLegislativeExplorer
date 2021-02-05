@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src='app.js'></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:wght@400;500;600;800" rel="stylesheet">
+  <title>Why Is My Rep</title>
+</head>
+<body>
+  <header>
+    <button id='topOfPage' onclick="window.location.href='index.html';">Why Is My Rep?</button>
+    <ul>
+      <!-- <li><button class='headerlinks' onclick="window.location.href='about.html';">About/Instructions</button></li> -->
+      <li><button class='headerlinks' onclick="window.location.href='find.html';">Find Your Representatives</button></li>
+      <li><button class='headerlinks' onclick="window.location.href='why.html';">Research Your Representatives</button></li>
+      <!-- <li><button class='headerlinks' onclick="window.location.href='data.html';">Data and Resources</button></li> -->
+    </ul>
+  </header>
+  <main id='mResult'>
+    <div id='namePage'>
+      <div id ='name'></div>
+      <div id='rImg'></div>
+      <div id='address'><strong>Office Address:</strong></div>
+      <div id='phone'><strong>Phone Number:</strong></div>
+      <div id='fax'><strong>Fax Number:</strong></div>
+      <div id='contactInfo'></div>
+    </div>
+    <div id='repInfo'>
+      <div id=summary><h2 style='text-align:center'>Summary</h2></div>
+      <button class='collapse'><h2>Recent Votes</h2></button>
+      <div class='content'><div id='votes'></div></div>
+      <button class='collapse'><h2>Recent Statements and Press Releases</h2></button>
+      <div class='content'><div id='pr'></div></div>
+      <button class='collapse'><h2>Bills</h2></button>
+      <div class='content'>
+        <div id='activeB'><h3>Active</h3></div>
+        <div id='passedB'><h3>Passed</h3></div>
+        <div id='enactedB'><h3>Enacted</h3></div>
+        <div id='vetoedB'><h3>Vetoed</h3></div>
+      </div>
+    </div>
+    <div id="nav">
+      <a href="#summary">Summary</a>
+      <a href="#votes">Recent Votes</a>
+      <a href="#pr">Recent Press</a>
+      <a href="#activeB">Active Bills</a>
+      <a href="#passedB">Passed Bills</a>
+      <a href="#enactedB">Enacted Bills</a>
+      <a href="#vetoedB">Vetoed Bills</a>
+    </div>
+  </main>
+  <footer id='fResult'>
+    <P>Made by Jacqueline-Jane Sylvia Denney</P>
+    <p>June 14th, 2020</p>
+    <p>Powerd By:</p>
+    <img src='https://i.imgur.com/AubDhQd.png' id='logo' alt='Powered by ProPublica Logo'>
+  </footer>
+</body>
+</html>
